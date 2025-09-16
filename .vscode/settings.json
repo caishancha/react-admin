@@ -1,0 +1,185 @@
+{
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.wrapTabs": true,
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.closeOnFileDelete": false,
+  "workbench.startupEditor": "none",
+
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.lineHeight": 1.6,
+  "editor.cursorStyle": "line",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.foldingStrategy": "indentation",
+  "editor.smoothScrolling": true,
+  "editor.tabCompletion": "on",
+  "editor.stickyTabStops": true,
+  "editor.wordBasedSuggestions": "off",
+  "editor.linkedEditing": true,
+
+  "editor.fontLigatures": true,
+  "editor.detectIndentation": false,
+  "editor.largeFileOptimizations": false,
+  "editor.accessibilitySupport": "off",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "expand",
+  "editor.guides.bracketPairs": "active",
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.hover.sticky": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.autoClosingBrackets": "beforeWhitespace",
+  "editor.autoClosingDelete": "always",
+  "editor.autoClosingOvertype": "always",
+  "editor.autoClosingQuotes": "beforeWhitespace",
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "extensions.ignoreRecommendations": true,
+
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.stickyScroll.enabled": true,
+
+  "files.eol": "\n",
+  "files.autoSave": "off",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    "*.ejs": "html",
+    "*.art": "html",
+    "**/tsconfig.json": "jsonc",
+    "*.json": "jsonc",
+    "package.json": "json"
+  },
+  "files.exclude": {
+    "**/.eslintcache": true,
+    "**/bower_components": true,
+    "**/.turbo": true,
+    "**/.idea": true,
+    "**/tmp": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.stylelintcache": true,
+    "**/.DS_Store": true,
+    "**/vite.config.mts.*": true,
+    "**/tea.yaml": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.vscode/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/bower_components/**": true,
+    "**/dist/**": true,
+    "**/yarn.lock": true
+  },
+
+  "search.followSymlinks": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/pnpm-lock.yaml": true,
+    "**/yarn.lock": true,
+    "**/package-lock.json": true,
+    "**/*.log": true,
+    "**/*.log*": true,
+    "**/.DS_Store": true,
+    "**/.svn": true,
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.idea": true,
+    "**/.vscode": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/tmp": true,
+    "out": true,
+    "dist": true,
+    "node_modules": true,
+    "CHANGELOG.md": true
+  },
+
+  "eslint.validate": [
+    "javascript",
+    "react",
+    "typescript",
+    "scss",
+    "markdown",
+    "jsx",
+    "tsx"
+  ],
+
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "$(capture).test.ts, $(capture).test.tsx, $(capture).spec.ts, $(capture).spec.tsx, $(capture).d.ts",
+    "*.tsx": "$(capture).test.ts, $(capture).test.tsx, $(capture).spec.ts, $(capture).spec.tsx,$(capture).d.ts",
+    "*.env": "$(capture).env.*",
+    "README.md": "README*,CHANGELOG*,LICENSE,CNAME",
+    "package.json": "pnpm-lock.yaml,pnpm-workspace.yaml,.gitattributes,.gitignore,.gitpod.yml,.npmrc,.node-version,.git*,.tazerc.json",
+    "eslint.config.mjs": ".eslintignore,.prettierignore,.stylelintignore,.commitlintrc.*,commitlint.config.*,.prettierrc.*,prettier.config.mjs,stylelint.config.*,.lintstagedrc.mjs,lint-staged.config.mjs, cspell.json, .browserslistrc,",
+    "tailwind.config.mjs": "postcss.*"
+  },
+
+  "javascript.format.semicolons": "remove",
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.format.semicolons": "remove",
+  "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.suggest.autoImports": true,
+  "vue.updateImportsOnFileMove.enabled": true,
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
+  "errorLens.excludeBySource": ["cSpell", "Grammarly", "eslint"],
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": false,
+  "debug.onTaskErrors": "debugAnyway",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "npm.packageManager": "pnpm"
+}
