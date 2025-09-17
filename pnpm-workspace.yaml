@@ -1,0 +1,7 @@
+packages:
+  - "packages/*"
+  - "packages/@core/*"
+  - "packages/@core/ui-kit/*"
+  - "internal/*"
+  - "internal/lint-config/*"
+  - "apps/*"
