@@ -17,11 +17,16 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "check-types": "tsc --noEmit",
-    "clean": "node ./scripts/clean.mjs"
+    "clean": "node ./scripts/clean.mjs",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky"
   },
-  "dependencies": {
+  "devDependencies": {
     "@react-admin-core/shadcn-ui": "workspace:*",
-    "turbo": "^2.5.6"
+    "@react-admin/prettier-config": "workspace:*",
+    "husky": "catalog:",
+    "turbo": "catalog:",
+    "unbuild": "catalog:"
   },
   "engines": {
     "node": ">=20.10.0",

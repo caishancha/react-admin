@@ -1,5 +1,7 @@
 {
   "$schema": "./node_modules/turbo/schema.json",
+  "globalDependencies": ["pnpm-lock.yaml", "**/.env.*", "**/tsconfig.json"],
+  "globalEnv": ["NODE_ENV"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],

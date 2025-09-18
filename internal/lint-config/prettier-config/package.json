@@ -1,0 +1,21 @@
+{
+  "name": "@react-admin/prettier-config",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "author": "caishancha",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./index.mjs",
+  "module": "./index.mjs",
+  "exports": {
+    ".": {
+      "default": "./index.mjs"
+    }
+  },
+  "dependencies": {
+    "prettier": "catalog:"
+  }
+}
