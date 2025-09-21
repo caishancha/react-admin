@@ -15,6 +15,9 @@ catalogs:
     turbo:
       specifier: 2.5.6
       version: 2.5.6
+    typescript:
+      specifier: ^5.9.2
+      version: 5.9.2
     unbuild:
       specifier: ^3.6.1
       version: 3.6.1
@@ -29,12 +32,18 @@ importers:
       '@react-admin/prettier-config':
         specifier: workspace:*
         version: link:internal/lint-config/prettier-config
+      '@react-admin/ts-config':
+        specifier: workspace:*
+        version: link:internal/tsconfig
       husky:
         specifier: 'catalog:'
         version: 9.1.7
       turbo:
         specifier: 'catalog:'
         version: 2.5.6
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.2
       unbuild:
         specifier: 'catalog:'
         version: 3.6.1(typescript@5.9.2)
@@ -50,8 +59,6 @@ importers:
       prettier:
         specifier: 'catalog:'
         version: 3.6.2
-
-  internal/lint-config/stylelist-config: {}
 
   internal/node-utils: {}
 

@@ -10,6 +10,7 @@ catalog:
   husky: 9.1.7
   prettier: 3.6.2
   turbo: 2.5.6
+  typescript: ^5.9.2
   unbuild: ^3.6.1
 
 catalogMode: strict

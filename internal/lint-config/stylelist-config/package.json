@@ -1,8 +1,0 @@
-{
-  "name": "@react-admin/stylelint-config",
-  "version": "1.0.0",
-  "type": "module",
-  "private": true,
-  "author": "caishancha",
-  "license": "MIT"
-}

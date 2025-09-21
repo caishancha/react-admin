@@ -24,8 +24,10 @@
   "devDependencies": {
     "@react-admin-core/shadcn-ui": "workspace:*",
     "@react-admin/prettier-config": "workspace:*",
+    "@react-admin/ts-config": "workspace:*",
     "husky": "catalog:",
     "turbo": "catalog:",
+    "typescript": "catalog:",
     "unbuild": "catalog:"
   },
   "engines": {
