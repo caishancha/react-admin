@@ -25,6 +25,7 @@
     "@react-admin-core/shadcn-ui": "workspace:*",
     "@react-admin/prettier-config": "workspace:*",
     "@react-admin/ts-config": "workspace:*",
+    "@types/node": "catalog:",
     "husky": "catalog:",
     "turbo": "catalog:",
     "typescript": "catalog:",

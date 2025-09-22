@@ -1,1 +1,1 @@
-import prettierConfig from "@react-admin/prettier-config";
+export { default } from "@react-admin/prettier-config";

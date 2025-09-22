@@ -11,7 +11,7 @@
     "baseUrl": ".",
     "module": "ESNext",
 
-    "moduleResolution": "nodenext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
 
     "strict": true,
