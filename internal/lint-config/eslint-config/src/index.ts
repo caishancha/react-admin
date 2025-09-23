@@ -1,7 +1,14 @@
 import type { Linter } from 'eslint';
 
-import { javascript, ignores, typescript, react, prettier } from './configs';
-import { restrictedConfig } from './restricted-config';
+import {
+  javascript,
+  ignores,
+  typescript,
+  react,
+  prettier,
+  turbo,
+  restricted,
+} from './configs';
 
 type FlatConfig = Linter.Config;
 
@@ -17,7 +24,8 @@ async function defineConfig(config: FlatConfig[] = []) {
     ignores(),
     typescript(),
     react(),
-    ...restrictedConfig,
+    turbo(),
+    restricted(),
     ...config,
     prettier(),
   ];

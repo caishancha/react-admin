@@ -1,10 +1,13 @@
 import { type Linter } from 'eslint';
 import { defineConfig } from 'eslint/config';
-import reactEslint from 'eslint-plugin-react';
-import reactHooks from 'eslint-plugin-react-hooks';
-import reactRefresh from 'eslint-plugin-react-refresh';
+import { interopDefault } from '../utils';
 
 export async function react(): Promise<Linter.Config[]> {
+  const [reactEslint, reactHooks, reactRefresh] = await Promise.all([
+    interopDefault(import('eslint-plugin-react')),
+    interopDefault(import('eslint-plugin-react-hooks')),
+    interopDefault(import('eslint-plugin-react-refresh')),
+  ] as const);
   return defineConfig({
     files: ['**/*.?([cm])[jt]s?(x)'],
     languageOptions: {
