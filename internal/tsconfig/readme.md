@@ -22,6 +22,10 @@
   - 取值说明：true（启用）| false（禁用）
   - 配置原因：项目中使用了装饰器语法（如 Angular、MobX 等框架的@Component、@observable），需开启此实验性特性（尽管装饰器已进入 ES 标准，但部分工具仍依赖此配置）。
 
+- `"allowImportingTsExtensions": true`
+  - 取值说明：true（启用）| false（禁用）
+  - 配置原因：项目中使用了 TypeScript 文件的扩展名（如 .ts、.tsx），需开启此选项以允许直接导入这些文件（如 import utils from './utils.ts'）。
+
 - `"baseUrl": "."`
   - 取值说明：模块解析的基准目录（如./src、./lib等）
   - 配置原因：设置为当前目录（.），使非相对路径导入（如import utils from 'utils'）从项目根目录开始解析，简化长路径导入（避免../../层级嵌套）。
@@ -33,6 +37,10 @@
 - `"moduleResolution": nodenext`
   - 取值说明：模块解析策略，node（传统 Node.js 规则）、nodenext（Node.js 最新规则，支持 ES 模块与 CommonJS 混合）
   - 配置原因：nodenext遵循 Node.js 最新的模块解析逻辑，能正确处理.mjs/.cjs文件和package.json中的type字段，适合 ES 模块与 CommonJS 共存的项目。
+
+- `"ignoreDeprecations": "6.0"`
+  - 取值说明：指定忽略的 TypeScript 版本（如 "6.0"），用于解决旧版本 TypeScript 不支持的语法或行为。
+  - 配置原因：项目中使用了 TypeScript 6.0 引入的新语法或行为（如装饰器），而旧版本 TypeScript 不支持，需忽略这些警告。
 
 - `"resolveJsonModule": true`
   - 取值说明：true（允许导入 JSON）| false（禁止）

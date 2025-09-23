@@ -7,11 +7,13 @@
 
     "moduleDetection": "force",
     "experimentalDecorators": true,
+    "allowImportingTsExtensions": true,
 
     "baseUrl": ".",
     "module": "ESNext",
 
     "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
     "resolveJsonModule": true,
 
     "strict": true,
