@@ -36,6 +36,7 @@
     "@types/node": "catalog:",
     "husky": "catalog:",
     "is-ci": "catalog:",
+    "lefthook": "catalog:",
     "lint-staged": "catalog:",
     "turbo": "catalog:",
     "typescript": "catalog:",
