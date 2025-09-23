@@ -15,24 +15,24 @@
   "license": "MIT",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
     "check-types": "tsc --noEmit",
+    "commit": "czg",
+    "clear": "node ./scripts/clear.mjs",
+    "dev": "turbo run dev",
     "format": "prettier --write \"**/*.?([cm])[jt]s?(x)\"",
     "format:check": "prettier --check \"**/*.?([cm])[jt]s?(x)\"",
     "lint": "eslint . --ext \"**/*.?([cm])[jt]s?(x)\"",
     "lint:fix": "eslint . --ext \"**/*.?([cm])[jt]s?(x)}\" --fix",
     "preinstall": "npx only-allow pnpm",
-    "prepare": "husky",
-    "postinstall": "pnpm -r run stub --if-present",
-    "clear": "node ./scripts/clear.mjs"
+    "postinstall": "pnpm -r run stub --if-present"
   },
   "devDependencies": {
     "@react-admin-core/shadcn-ui": "workspace:*",
-    "@react-admin/prettier-config": "workspace:*",
+    "@react-admin/commitlint-config": "workspace:*",
     "@react-admin/eslint-config": "workspace:*",
+    "@react-admin/prettier-config": "workspace:*",
     "@react-admin/ts-config": "workspace:*",
     "@types/node": "catalog:",
-    "husky": "catalog:",
     "turbo": "catalog:",
     "typescript": "catalog:",
     "unbuild": "catalog:"
