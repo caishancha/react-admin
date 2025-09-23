@@ -5,7 +5,6 @@ import tsEslint from 'typescript-eslint';
 export async function typescript(): Promise<Linter.Config[]> {
   return defineConfig({
     files: ['**/*.?([cm])[jt]s?(x)'],
-    ignores: ['**/build/**', '**/dist/**'],
     languageOptions: {
       parser: tsEslint.parser,
       parserOptions: {
