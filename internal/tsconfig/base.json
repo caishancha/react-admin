@@ -12,8 +12,7 @@
     "baseUrl": ".",
     "module": "ESNext",
 
-    "moduleResolution": "node",
-    "ignoreDeprecations": "6.0",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
 
     "strict": true,
