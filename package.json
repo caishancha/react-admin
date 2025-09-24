@@ -31,6 +31,7 @@
     "@react-admin-core/shadcn-ui": "workspace:*",
     "@react-admin/commitlint-config": "workspace:*",
     "@react-admin/eslint-config": "workspace:*",
+    "@react-admin/node-utils": "workspace:*",
     "@react-admin/prettier-config": "workspace:*",
     "@react-admin/ts-config": "workspace:*",
     "@types/node": "catalog:",

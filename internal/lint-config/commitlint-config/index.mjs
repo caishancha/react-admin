@@ -1,5 +1,21 @@
 import { execSync } from 'node:child_process';
 
+import { getPackagesSync } from '@react-admin/node-utils';
+
+const { packages } = getPackagesSync();
+
+// 允许的scope
+const allowedScopes = [
+  ...packages.map(pkg => pkg.packageJson.name),
+  'project',
+  'style',
+  'lint',
+  'ci',
+  'dev',
+  'deploy',
+  'other',
+];
+
 const scopeComplete = execSync('git status --porcelain || true')
   .toString()
   .trim()
@@ -69,17 +85,17 @@ const userConfig = {
   rules: {
     'body-leading-blank': [2, 'always'],
     'footer-leading-blank': [1, 'always'],
-    // 'function-rules/scope-enum': [
-    //   2, // level: error
-    //   'always',
-    //   (parsed) => {
-    //     if (!parsed.scope || allowedScopes.includes(parsed.scope)) {
-    //       return [true];
-    //     }
+    'function-rules/scope-enum': [
+      2,
+      'always',
+      parsed => {
+        if (!parsed.scope || allowedScopes.includes(parsed.scope)) {
+          return [true];
+        }
 
-    //     return [false, `scope must be one of ${allowedScopes.join(', ')}`];
-    //   },
-    // ],
+        return [false, `scope must be one of ${allowedScopes.join(', ')}`];
+      },
+    ],
     'header-max-length': [2, 'always', 108],
 
     'scope-enum': [0],
