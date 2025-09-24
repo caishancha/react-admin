@@ -24,7 +24,7 @@
     "lint": "eslint . --ext \"**/*.?([cm])[jt]s?(x)\"",
     "lint:fix": "eslint . --ext \"**/*.?([cm])[jt]s?(x)}\" --fix",
     "preinstall": "npx only-allow pnpm",
-    "prepare": "is-ci || husky",
+    "prepare": "husky || true",
     "postinstall": "pnpm -r run stub --if-present"
   },
   "devDependencies": {
@@ -35,8 +35,6 @@
     "@react-admin/ts-config": "workspace:*",
     "@types/node": "catalog:",
     "husky": "catalog:",
-    "is-ci": "catalog:",
-    "lefthook": "catalog:",
     "lint-staged": "catalog:",
     "turbo": "catalog:",
     "typescript": "catalog:",

@@ -1,6 +1,6 @@
 export default {
   '*.md': ['prettier --cache --ignore-unknown --write'],
-  '*.{js,jsx,ts,tsx}': [
+  '*.{js,mjs,jsx,ts,mts,tsx}': [
     'prettier --cache --ignore-unknown  --write',
     'eslint --cache --fix',
   ],

@@ -57,12 +57,6 @@ catalogs:
     husky:
       specifier: 9.1.7
       version: 9.1.7
-    is-ci:
-      specifier: ^4.1.0
-      version: 4.1.0
-    lefthook:
-      specifier: ^1.13.3
-      version: 1.13.3
     lint-staged:
       specifier: ^16.2.0
       version: 16.2.0
@@ -107,12 +101,6 @@ importers:
       husky:
         specifier: 'catalog:'
         version: 9.1.7
-      is-ci:
-        specifier: 'catalog:'
-        version: 4.1.0
-      lefthook:
-        specifier: 'catalog:'
-        version: 1.13.3
       lint-staged:
         specifier: 'catalog:'
         version: 16.2.0
@@ -896,10 +884,6 @@ packages:
     resolution: {integrity: sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
-  ci-info@4.3.0:
-    resolution: {integrity: sha512-l+2bNRMiQgcfILUi33labAZYIWlH1kWDp+ecNo5iisRKrbm0xcRyCww71/YU0Fkw0mAFpz9bJayXPjey6vkmaQ==}
-    engines: {node: '>=8'}
-
   citty@0.1.6:
     resolution: {integrity: sha512-tskPPKEs8D2KPafUypv2gxwJP8h/OaJmC82QQGGDQcHvXX43xF2VDACcJVmZ0EuSxkpO9Kc4MlrA3q0+FG58AQ==}
 
@@ -1522,10 +1506,6 @@ packages:
     resolution: {integrity: sha512-1BC0BVFhS/p0qtw6enp8e+8OD0UrK0oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjEY9UUoEWlX/8fgKeu2S8i9JTA==}
     engines: {node: '>= 0.4'}
 
-  is-ci@4.1.0:
-    resolution: {integrity: sha512-Ab9bQDQ11lWootZUI5qxgN2ZXwxNI5hTwnsvOc1wyxQ7zQ8OkEDw79mI0+9jI3x432NfwbVRru+3noJfXF6lSQ==}
-    hasBin: true
-
   is-core-module@2.16.1:
     resolution: {integrity: sha512-UfoeMA6fIJ8wTYFEUjelnaGI67v6+N7qXJEvQuIGa99l4xsCruSYOVSQ0uPANn4dAzm8lkYPaKLrrijLq7x23w==}
     engines: {node: '>= 0.4'}
@@ -1681,60 +1661,6 @@ packages:
 
   knitwork@1.2.0:
     resolution: {integrity: sha512-xYSH7AvuQ6nXkq42x0v5S8/Iry+cfulBz/DJQzhIyESdLD7425jXsPy4vn5cCXU+HhRN2kVw51Vd1K6/By4BQg==}
-
-  lefthook-darwin-arm64@1.13.3:
-    resolution: {integrity: sha512-PtCWi3yOgN50//73GH4xVeTd0WHCQWeHjHezGpPRzllavKo0z/dW4K5dj4ppn1E2nflanHEArrBfKEWHT5Gx0Q==}
-    cpu: [arm64]
-    os: [darwin]
-
-  lefthook-darwin-x64@1.13.3:
-    resolution: {integrity: sha512-lFSNWEpAP7iS260UtNPiwczq05CYBNAZpzBPE582++MB09aejdveVFDx/Hmur6xobInCCVgwzWTVW92LGIWTXQ==}
-    cpu: [x64]
-    os: [darwin]
-
-  lefthook-freebsd-arm64@1.13.3:
-    resolution: {integrity: sha512-LZ3Sj0utBxzsJWmyhHB2nBaFsI4cf/FivE0GtCGcGQZFxizgctqfuruL5oWuA9XOuRpyTICcTO01bS5/ZTMorQ==}
-    cpu: [arm64]
-    os: [freebsd]
-
-  lefthook-freebsd-x64@1.13.3:
-    resolution: {integrity: sha512-TXXrEpRdV86hK3j69jEaZON16kLnrXR/G1UdA2tfeeFN3t2ZejrEyAoSnbW0IrR8dK4pDx6gceTVSWJN2Pk10g==}
-    cpu: [x64]
-    os: [freebsd]
-
-  lefthook-linux-arm64@1.13.3:
-    resolution: {integrity: sha512-iSMQB5G0HlUPimvHx+zGCD0VWhwA+Tc6MpHk9TYzhuQh3FP2ksyxadjSpMn/Q+iwfq6XoEhHyX69esksVI/awg==}
-    cpu: [arm64]
-    os: [linux]
-
-  lefthook-linux-x64@1.13.3:
-    resolution: {integrity: sha512-3nsNNTW0TnrbZNdKJiuCcy6pRpzX+kfTqsKL7R/JlAqfSWQroMhvIVrcSPazbZAs32U0nDMQ05tkd/lEEKvjTw==}
-    cpu: [x64]
-    os: [linux]
-
-  lefthook-openbsd-arm64@1.13.3:
-    resolution: {integrity: sha512-g6pw2l17CF8wTUz+25vXK3xd22DyYp+qEM9acKdT/Hh/OooyOx/fyh134Hghp6cAoeo1ix9w16hmKbQq5QlYZQ==}
-    cpu: [arm64]
-    os: [openbsd]
-
-  lefthook-openbsd-x64@1.13.3:
-    resolution: {integrity: sha512-rWyErYH3G8A0/o+hzkpc+5ZuiKoanoGS4qjVS6y/Jh5LWqmkVjtEptdkcuYdNEVt9ShNHIys0F7uNCg0V+rZlA==}
-    cpu: [x64]
-    os: [openbsd]
-
-  lefthook-windows-arm64@1.13.3:
-    resolution: {integrity: sha512-xRB+DcvRSdG7+QydDvhJMm//THUpFqOcyfDgy4TuP3B0DhakuOn1K/95kNf9qHj15uLHIK2ceWGqVew2FRXP4w==}
-    cpu: [arm64]
-    os: [win32]
-
-  lefthook-windows-x64@1.13.3:
-    resolution: {integrity: sha512-Or256NzKEg4hjblN8La7cnfqj+POfsiEknUdhcp+4GFUXzE6lhXadEyXKf3X9qZPpV4QZjgfobtdAEgTFUCj6Q==}
-    cpu: [x64]
-    os: [win32]
-
-  lefthook@1.13.3:
-    resolution: {integrity: sha512-suxG98kRI/a4T2gkdh97o14aTaNr1cKdA2olNaNLz16dy4/J1PahYPm54sqmm/Zhoi1DCV43SUNz6T6bh0Y7Ng==}
-    hasBin: true
 
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
@@ -3270,8 +3196,6 @@ snapshots:
 
   chalk@5.6.2: {}
 
-  ci-info@4.3.0: {}
-
   citty@0.1.6:
     dependencies:
       consola: 3.4.2
@@ -4014,10 +3938,6 @@ snapshots:
 
   is-callable@1.2.7: {}
 
-  is-ci@4.1.0:
-    dependencies:
-      ci-info: 4.3.0
-
   is-core-module@2.16.1:
     dependencies:
       hasown: 2.0.2
@@ -4165,49 +4085,6 @@ snapshots:
       json-buffer: 3.0.1
 
   knitwork@1.2.0: {}
-
-  lefthook-darwin-arm64@1.13.3:
-    optional: true
-
-  lefthook-darwin-x64@1.13.3:
-    optional: true
-
-  lefthook-freebsd-arm64@1.13.3:
-    optional: true
-
-  lefthook-freebsd-x64@1.13.3:
-    optional: true
-
-  lefthook-linux-arm64@1.13.3:
-    optional: true
-
-  lefthook-linux-x64@1.13.3:
-    optional: true
-
-  lefthook-openbsd-arm64@1.13.3:
-    optional: true
-
-  lefthook-openbsd-x64@1.13.3:
-    optional: true
-
-  lefthook-windows-arm64@1.13.3:
-    optional: true
-
-  lefthook-windows-x64@1.13.3:
-    optional: true
-
-  lefthook@1.13.3:
-    optionalDependencies:
-      lefthook-darwin-arm64: 1.13.3
-      lefthook-darwin-x64: 1.13.3
-      lefthook-freebsd-arm64: 1.13.3
-      lefthook-freebsd-x64: 1.13.3
-      lefthook-linux-arm64: 1.13.3
-      lefthook-linux-x64: 1.13.3
-      lefthook-openbsd-arm64: 1.13.3
-      lefthook-openbsd-x64: 1.13.3
-      lefthook-windows-arm64: 1.13.3
-      lefthook-windows-x64: 1.13.3
 
   levn@0.4.1:
     dependencies:
