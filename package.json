@@ -17,7 +17,7 @@
     "build": "turbo run build",
     "check-types": "tsc --noEmit",
     "commit": "czg",
-    "clear": "node ./scripts/clear.mjs",
+    "clean": "node ./scripts/clean.mjs",
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.?([cm])[jt]s?(x)\"",
     "format:check": "prettier --check \"**/*.?([cm])[jt]s?(x)\"",

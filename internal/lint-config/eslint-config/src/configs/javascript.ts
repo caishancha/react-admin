@@ -86,7 +86,8 @@ export async function javascript(): Promise<Linter.Config[]> {
       // 禁用条件赋值：禁止在条件语句中赋值
       'no-cond-assign': ['error', 'always'],
       // 禁用console：禁止使用console，但允许warn和error
-      'no-console': ['error', { allow: ['warn', 'error'] }],
+      // 'no-console': ['error', { allow: ['warn', 'error'] }],
+      'no-console': 'off',
       // 禁用const赋值：禁止重新分配const变量
       'no-const-assign': 'error',
       // 禁用控制字符：禁止在正则表达式中使用控制字符
