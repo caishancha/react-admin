@@ -2,12 +2,12 @@ import { colors, consola } from '@react-admin/node-utils';
 
 import { cac } from 'cac';
 
-import { version } from '../package.json';
-import { defineCheckCircularCommand } from './check-circular';
-import { defineDepcheckCommand } from './check-dep';
-import { defineCodeWorkspaceCommand } from './code-workspace';
-import { defineLintCommand } from './lint';
-import { definePubLintCommand } from './publint';
+import packageJson from '../package.json' with { type: 'json' };
+import { defineCheckCircularCommand } from './check-circular/index.ts';
+import { defineDepcheckCommand } from './check-dep/index.ts';
+import { defineCodeWorkspaceCommand } from './code-workspace/index.ts';
+import { defineLintCommand } from './lint/index.ts';
+import { definePubLintCommand } from './publint/index.ts';
 
 // 命令描述
 const COMMAND_DESCRIPTIONS = {
@@ -49,7 +49,7 @@ async function main(): Promise<void> {
     // Set up CLI
     vsh.usage('vsh <command> [options]');
     vsh.help();
-    vsh.version(version);
+    vsh.version(packageJson.version);
 
     // Parse arguments
     vsh.parse();

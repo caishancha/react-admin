@@ -4,5 +4,12 @@
   "type": "module",
   "private": true,
   "author": "caishancha",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "base.json",
+    "library.json",
+    "node.json",
+    "web-app.json",
+    "web-pkg.json"
+  ]
 }

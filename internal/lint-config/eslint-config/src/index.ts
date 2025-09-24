@@ -8,7 +8,7 @@ import {
   prettier,
   turbo,
   restricted,
-} from './configs';
+} from './configs/index.ts';
 
 type FlatConfig = Linter.Config;
 
