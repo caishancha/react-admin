@@ -1,10 +1,5 @@
 export default {
   '*.md': ['prettier --cache --ignore-unknown --write'],
-  '*.react': [
-    'prettier --write',
-    'eslint --cache --fix',
-    'stylelint --fix --allow-empty-input',
-  ],
   '*.{js,jsx,ts,tsx}': [
     'prettier --cache --ignore-unknown  --write',
     'eslint --cache --fix',

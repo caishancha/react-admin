@@ -1,6 +1,6 @@
-# update `.vscode/vben-admin.code-workspace` file
+# update `.vscode/react-admin.code-workspace` file
 # pnpm vsh code-workspace --auto-commit
-echo Run pre-commit hook start.
+echo Start Running pre-commit hook.
 
 pnpm exec lint-staged
 
