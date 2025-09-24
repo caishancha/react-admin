@@ -22,6 +22,7 @@
     "./package.json": "./package.json"
   },
   "dependencies": {
+    "@react-admin/node-utils": "workspace:*",
     "cac": "catalog:",
     "circular-dependency-scanner": "catalog:",
     "depcheck": "catalog:",
