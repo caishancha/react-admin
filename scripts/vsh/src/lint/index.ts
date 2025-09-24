@@ -11,14 +11,14 @@ interface LintCommandOptions {
 
 async function runLint({ format }: LintCommandOptions) {
   if (format) {
-    await execaCommand(`stylelint "**/*.{css,less,scss}" --cache --fix`, {
+    await execaCommand(`stylelint **/*.{css,less,scss} --cache --fix`, {
       stdio: 'inherit',
     });
-    await execaCommand(`eslint . --ext "**/*.?([cm])[jt]s?(x)}" --fix`, {
+    await execaCommand(`eslint . --ext **/*.?([cm])[jt]s?(x)} --fix`, {
       stdio: 'inherit',
     });
     await execaCommand(
-      `prettier --write  --cache --log-level warn "**/*.?([cm])[jt]s?(x)"`,
+      `prettier --write  --cache --log-level warn **/*.?([cm])[jt]s?(x)`,
       {
         stdio: 'inherit',
       },
@@ -26,12 +26,15 @@ async function runLint({ format }: LintCommandOptions) {
     return;
   }
   await Promise.all([
-    execaCommand(`eslint . --cache`, {
+    execaCommand(`eslint . --ext **/*.?([cm])[jt]s?(x) --cache`, {
       stdio: 'inherit',
     }),
-    execaCommand(`prettier . --ignore-unknown --check --cache`, {
-      stdio: 'inherit',
-    }),
+    execaCommand(
+      `prettier --ignore-unknown --check --cache **/*.?([cm])[jt]s?(x)`,
+      {
+        stdio: 'inherit',
+      },
+    ),
     execaCommand(`stylelint "**/*.{css,less,scss}" --cache`, {
       stdio: 'inherit',
     }),

@@ -27,7 +27,6 @@
     "lint:check": "vsh lint",
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky || true",
-    "postinstall": "pnpm -r run stub --if-present",
     "publint": "vsh publint",
     "reinstall": "pnpm clean --del-lock && pnpm install",
     "catalog": "pnpx codemod pnpm/catalog"
@@ -36,6 +35,7 @@
     "@react-admin/commitlint-config": "workspace:*",
     "@react-admin/eslint-config": "workspace:*",
     "@react-admin/prettier-config": "workspace:*",
+    "@react-admin/stylelint-config": "workspace:*",
     "@react-admin/ts-config": "workspace:*",
     "@react-admin/vsh": "workspace:*",
     "@types/node": "catalog:",
