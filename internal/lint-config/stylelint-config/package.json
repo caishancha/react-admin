@@ -5,9 +5,6 @@
   "private": true,
   "author": "caishancha",
   "license": "MIT",
-  "files": [
-    "dist"
-  ],
   "main": "./index.mjs",
   "module": "./index.mjs",
   "exports": {

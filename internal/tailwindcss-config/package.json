@@ -4,5 +4,30 @@
   "type": "module",
   "private": true,
   "author": "caishancha",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "stub": "pnpm unbuild --stub"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./src/index.ts"
+    },
+    "./index.css": {
+      "import": "./src/tailwindcss.css",
+      "require": "./src/tailwindcss.css"
+    }
+  },
+  "dependencies": {
+    "@iconify/json": "catalog:",
+    "@iconify/tailwind4": "catalog:",
+    "@tailwindcss/vite": "catalog:",
+    "tailwindcss": "catalog:"
+  }
 }
