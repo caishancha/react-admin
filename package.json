@@ -37,6 +37,7 @@
     "@react-admin/eslint-config": "workspace:*",
     "@react-admin/prettier-config": "workspace:*",
     "@react-admin/stylelint-config": "workspace:*",
+    "@react-admin/tailwindcss-config": "workspace:*",
     "@react-admin/ts-config": "workspace:*",
     "@react-admin/vsh": "workspace:*",
     "@types/node": "catalog:",

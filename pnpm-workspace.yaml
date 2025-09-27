@@ -12,19 +12,38 @@ catalog:
   '@commitlint/cli': ^19.8.1
   '@commitlint/config-conventional': ^19.8.1
   '@eslint/js': ^9.36.0
-  '@manypkg/get-packages': ^3.1.0
+  '@iconify/json': ^2.2.388
+  '@iconify/tailwind': ^1.2.0
+  '@iconify/tailwind4': ^1.0.6
+  '@jspm/generator': ^2.7.0
+  '@manypkg/get-packages': 3.1.0
+  '@pnpm/workspace.read-manifest': ^1000.2.4
   '@stylistic/stylelint-plugin': ^4.0.0
+  '@tailwindcss/postcss': ^4.1.13
+  '@tailwindcss/typography': ^0.5.19
+  '@tailwindcss/vite': ^4.1.13
+  '@types/archiver': ^6.0.3
+  '@types/html-minifier-terser': ^7.0.2
   '@types/node': ^24.5.2
+  '@types/react': ^19.1.14
+  '@types/react-dom': ^19.1.9
+  '@vitejs/plugin-react': ^5.0.3
+  '@vitejs/plugin-react-swc': ^4.1.0
+  archiver: ^7.0.1
+  autoprefixer: ^10.4.21
   cac: ^6.7.14
   chalk: ^5.6.2
+  cheerio: ^1.1.2
   circular-dependency-scanner: ^2.3.0
   commitlint-plugin-function-rules: ^4.0.2
   consola: ^3.4.2
   cspell: ^9.2.1
+  cssnano: ^7.1.1
   cz-git: ^1.12.0
   czg: ^1.12.0
   dayjs: ^1.11.18
   depcheck: ^1.4.7
+  dotenv: ^17.2.2
   eslint: ^9.36.0
   eslint-config-prettier: ^10.1.8
   eslint-config-turbo: 2.5.6
@@ -35,17 +54,26 @@ catalog:
   eslint-plugin-unused-imports: ^4.2.0
   execa: ^9.6.0
   find-up: ^8.0.0
+  get-port: ^7.1.0
   globals: ^16.4.0
+  html-minifier-terser: ^7.2.0
   husky: 9.1.7
   lint-staged: ^16.2.0
+  nitropack: ^2.12.6
   ora: ^9.0.0
   pkg-types: ^2.3.0
-  postcss: ^8.5.6
+  postcss: 8.5.6
   postcss-html: ^1.8.0
   postcss-scss: ^4.0.9
   prettier: 3.6.2
   publint: 0.3.13
+  react: ^19.1.1
+  react-dom: ^19.1.1
+  react-router: ^7.9.3
+  resolve.exports: ^2.0.3
   rimraf: ^6.0.1
+  rollup: ^4.52.3
+  rollup-plugin-visualizer: ^6.0.3
   stylelint: ^16.24.0
   stylelint-config-recess-order: ^7.3.0
   stylelint-config-recommended: ^17.0.0
@@ -54,9 +82,16 @@ catalog:
   stylelint-order: ^7.0.0
   stylelint-prettier: ^5.0.3
   stylelint-scss: ^6.12.1
+  tailwindcss: ^4.1.13
   turbo: 2.5.6
   typescript: ^5.9.2
   typescript-eslint: ^8.44.0
   unbuild: ^3.6.1
+  vite: ^7.1.7
+  vite-plugin-compression: ^0.5.1
+  vite-plugin-dts: ^4.5.4
+  vite-plugin-html: ^3.2.2
+  vite-plugin-lazy-import: ^1.0.7
+  vite-plugin-pwa: ^1.0.3
 
 catalogMode: strict

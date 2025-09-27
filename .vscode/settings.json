@@ -153,6 +153,7 @@
     "jsx",
     "tsx"
   ],
+  "css.validate": false,
 
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
@@ -174,7 +175,6 @@
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.preferences.preferTypeOnlyAutoImports": true,
   "typescript.suggest.autoImports": true,
-  "vue.updateImportsOnFileMove.enabled": true,
   "errorLens.enabledDiagnosticLevels": ["warning", "error"],
   "errorLens.excludeBySource": ["cSpell", "Grammarly", "eslint"],
   "emmet.showSuggestionsAsSnippets": true,
