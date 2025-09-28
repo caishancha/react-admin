@@ -40,7 +40,7 @@
     "rollup": "catalog:",
     "rollup-plugin-visualizer": "catalog:",
     "vite": "catalog:",
-    "vite-plugin-compression": "catalog:",
+    "vite-plugin-compression2": "catalog:",
     "vite-plugin-dts": "catalog:",
     "vite-plugin-html": "catalog:",
     "vite-plugin-lazy-import": "catalog:",
