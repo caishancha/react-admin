@@ -93,5 +93,6 @@ catalog:
   vite-plugin-html: ^3.2.2
   vite-plugin-lazy-import: ^1.0.7
   vite-plugin-pwa: ^1.0.3
+  vite-plugin-react-click-to-component: ^4.0.0
 
 catalogMode: strict
