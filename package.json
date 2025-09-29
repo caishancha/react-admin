@@ -39,6 +39,7 @@
     "@react-admin/stylelint-config": "workspace:*",
     "@react-admin/tailwindcss-config": "workspace:*",
     "@react-admin/ts-config": "workspace:*",
+    "@react-admin/vite-config": "workspace:*",
     "@react-admin/vsh": "workspace:*",
     "@types/node": "catalog:",
     "cspell": "catalog:",

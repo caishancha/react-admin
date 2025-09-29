@@ -269,6 +269,9 @@ importers:
       '@react-admin/ts-config':
         specifier: workspace:*
         version: link:internal/tsconfig
+      '@react-admin/vite-config':
+        specifier: workspace:*
+        version: link:internal/vite-config
       '@react-admin/vsh':
         specifier: workspace:*
         version: link:scripts/vsh
