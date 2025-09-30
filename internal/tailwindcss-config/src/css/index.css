@@ -1,0 +1,6 @@
+/* @import 'tailwindcss' prefix(tw); */
+@import 'tailwindcss';
+
+/* @import './tailwind.css'; */
+
+@plugin '@iconify/tailwind4';

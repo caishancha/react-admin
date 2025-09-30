@@ -18,6 +18,9 @@
     ".": {
       "import": "./dist/index.mjs",
       "types": "./dist/index.d.ts"
+    },
+    "./tailwind.css": {
+      "default": "./src/css/index.css"
     }
   },
   "dependencies": {
