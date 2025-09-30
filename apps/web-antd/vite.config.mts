@@ -1,9 +1,13 @@
 import { defineConfig } from '@react-admin/vite-config';
+import { tailwindcss } from '@react-admin/tailwindcss-config';
 
 export default defineConfig(async () => {
   return {
-    application: {},
+    application: {
+      injectAppLoading: false,
+    },
     vite: {
+      plugins: [tailwindcss()],
       server: {
         proxy: {
           '/dev-api': {

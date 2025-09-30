@@ -17,11 +17,7 @@
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
-      "types": "./src/index.ts"
-    },
-    "./index.css": {
-      "import": "./src/tailwindcss.css",
-      "require": "./src/tailwindcss.css"
+      "types": "./dist/index.d.ts"
     }
   },
   "dependencies": {

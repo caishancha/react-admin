@@ -22,6 +22,7 @@
     "commit": "czg",
     "clean": "node ./scripts/clean.mjs",
     "dev": "turbo run dev",
+    "dev:antd": "pnpm --filter=@react-admin/web-antd run dev ",
     "lint": "pnpm run lint:fix",
     "lint:fix": "vsh lint --format",
     "lint:check": "vsh lint",
@@ -45,9 +46,13 @@
     "cspell": "catalog:",
     "husky": "catalog:",
     "lint-staged": "catalog:",
+    "rimraf": "catalog:",
+    "tailwindcss": "catalog:",
     "turbo": "catalog:",
     "typescript": "catalog:",
-    "unbuild": "catalog:"
+    "unbuild": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
   },
   "engines": {
     "node": ">=20.10.0",

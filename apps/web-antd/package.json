@@ -5,10 +5,21 @@
   "private": true,
   "author": "caishancha",
   "license": "MIT",
+  "scripts": {
+    "build": "pnpm vite build --mode production",
+    "build:analyze": "pnpm vite build --mode analyze",
+    "dev": "pnpm vite --mode development",
+    "preview": "vite preview"
+  },
+  "imports": {
+    "#/*": "./src/*"
+  },
   "dependencies": {
+    "antd": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
-    "react-router": "catalog:"
+    "react-router": "catalog:",
+    "zustand": "catalog:"
   },
   "devDependencies": {
     "@types/react": "catalog:",
