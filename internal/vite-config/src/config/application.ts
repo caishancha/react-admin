@@ -64,6 +64,11 @@ function defineApplicationConfig(userConfigPromise?: DefineApplicationOptions) {
         drop: isBuild ? ['console', 'debugger'] : [],
         legalComments: 'none',
       },
+      resolve: {
+        alias: {
+          '#': '/src',
+        },
+      },
       plugins,
       server: {
         host: true,
@@ -72,7 +77,7 @@ function defineApplicationConfig(userConfigPromise?: DefineApplicationOptions) {
           // 预热文件
           clientFiles: [
             './index.html',
-            './src/bootstrap.ts',
+            './src/bootstrap.tsx',
             './src/{views,layouts,router,store,api,adapter}/*',
           ],
         },

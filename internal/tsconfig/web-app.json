@@ -1,8 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Web Application TypeScript Config",
-  "extends": "./web.json",
+  "extends": "./web-pkg.json",
   "compilerOptions": {
+    // "types": ["vite/client", "@react-admin/types/global"]
     "types": ["vite/client", "@react-admin/types/global"]
   }
 }
