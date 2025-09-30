@@ -15,6 +15,7 @@
     "#/*": "./src/*"
   },
   "dependencies": {
+    "@react-admin/types": "workspace:*",
     "@react-admin/styles": "workspace:*",
     "antd": "catalog:",
     "react": "catalog:",

@@ -338,6 +338,9 @@ importers:
       '@react-admin/styles':
         specifier: workspace:*
         version: link:../../packages/styles
+      '@react-admin/types':
+        specifier: workspace:*
+        version: link:../../packages/types
       antd:
         specifier: 'catalog:'
         version: 5.27.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -605,6 +608,8 @@ importers:
       '@react-admin-core/design':
         specifier: workspace:*
         version: link:../@core/base/design
+
+  packages/types: {}
 
   scripts/vsh:
     dependencies:
