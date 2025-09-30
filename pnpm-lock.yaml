@@ -609,7 +609,11 @@ importers:
         specifier: workspace:*
         version: link:../@core/base/design
 
-  packages/types: {}
+  packages/types:
+    dependencies:
+      '@react-admin-core/typings':
+        specifier: workspace:*
+        version: link:../@core/base/typings
 
   scripts/vsh:
     dependencies:

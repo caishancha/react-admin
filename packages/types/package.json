@@ -14,5 +14,7 @@
       "default": "./global.d.ts"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "@react-admin-core/typings": "workspace:*"
+  }
 }
