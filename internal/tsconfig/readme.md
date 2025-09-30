@@ -35,8 +35,10 @@
   - 配置原因：使用ESNext生成符合最新 ES 模块标准的代码（import/export），适合现代浏览器或支持 ES 模块的 Node.js 环境（需配合"type": "module"使用）。
 
 - `"moduleResolution": nodenext`
-  - 取值说明：模块解析策略，node（传统 Node.js 规则）、nodenext（Node.js 最新规则，支持 ES 模块与 CommonJS 混合）
-  - 配置原因：nodenext遵循 Node.js 最新的模块解析逻辑，能正确处理.mjs/.cjs文件和package.json中的type字段，适合 ES 模块与 CommonJS 共存的项目。
+  - 取值说明：模块解析策略，node（传统 Node.js 规则）、nodenext（Node.js 最新规则，支持 ES 模块与 CommonJS 混合）、bundler
+  - 配置原因：
+    - nodenext遵循 Node.js 最新的模块解析逻辑，能正确处理.mjs/.cjs文件和package.json中的type字段，适合 ES 模块与 CommonJS 共存的项目。
+    - bundler：TypeScript 5.0 及以上版本引入的模块解析策略，专门用于配合现代打包工具（如 Webpack、Vite、Rollup、esbuild 等）的模块解析逻辑。（允许省略文件扩展名）
 
 - `"ignoreDeprecations": "6.0"`
   - 取值说明：指定忽略的 TypeScript 版本（如 "6.0"），用于解决旧版本 TypeScript 不支持的语法或行为。

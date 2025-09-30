@@ -1,13 +1,16 @@
-import type { UserConfig } from 'vite';
+import type { CSSOptions, UserConfig } from 'vite';
 
 import type { DefineApplicationOptions } from '../typing.ts';
 
+import { NodePackageImporter } from 'sass';
 import { defineConfig, loadEnv, mergeConfig } from 'vite';
 
 import { defaultImportmapOptions, getDefaultPwaOptions } from '../options.ts';
 import { loadApplicationPlugins } from '../plugins/index.ts';
 import { loadAndConvertEnv } from '../utils/env.ts';
 import { getCommonConfig } from './common.ts';
+import { findMonorepoRoot } from '@react-admin/node-utils';
+import path, { relative } from 'node:path';
 
 function defineApplicationConfig(userConfigPromise?: DefineApplicationOptions) {
   return defineConfig(async config => {
@@ -48,6 +51,8 @@ function defineApplicationConfig(userConfigPromise?: DefineApplicationOptions) {
       ...application,
     });
 
+    const { injectGlobalScss = true } = application;
+
     const applicationConfig: UserConfig = {
       base,
       build: {
@@ -60,6 +65,7 @@ function defineApplicationConfig(userConfigPromise?: DefineApplicationOptions) {
         },
         target: 'es2015',
       },
+      css: createCssOptions(injectGlobalScss),
       esbuild: {
         drop: isBuild ? ['console', 'debugger'] : [],
         legalComments: 'none',
@@ -90,6 +96,27 @@ function defineApplicationConfig(userConfigPromise?: DefineApplicationOptions) {
     );
     return mergeConfig(mergedCommonConfig, vite);
   });
+}
+
+function createCssOptions(injectGlobalScss = true): CSSOptions {
+  const root = findMonorepoRoot();
+  return {
+    preprocessorOptions: injectGlobalScss
+      ? {
+          scss: {
+            additionalData: (content: string, filepath: string) => {
+              const relativePath = relative(root, filepath);
+              // apps下的包注入全局样式
+              if (relativePath.startsWith(`apps${path.sep}`)) {
+                return `@use "@react-admin/styles/global" as *;\n${content}`;
+              }
+              return content;
+            },
+            importers: [new NodePackageImporter()],
+          },
+        }
+      : {},
+  };
 }
 
 export { defineApplicationConfig };

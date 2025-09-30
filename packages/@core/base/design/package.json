@@ -1,0 +1,37 @@
+{
+  "name": "@react-admin-core/design",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "author": "caishancha",
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm vite build",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    "./bem": {
+      "sass": "./src/scss-bem/bem.scss",
+      "development": "./src/scss-bem/bem.scss",
+      "default": "./dist/bem.scss"
+    },
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./dist/design.css"
+    }
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "default": "./dist/index.mjs"
+      }
+    }
+  }
+}

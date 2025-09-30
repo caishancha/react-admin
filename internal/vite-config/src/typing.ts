@@ -228,6 +228,11 @@ interface ApplicationPluginOptions extends CommonPluginOptions {
    */
   injectAppLoading?: boolean;
   /**
+   * 是否注入全局 SCSS
+   * @default true
+   */
+  injectGlobalScss?: boolean;
+  /**
    * 是否注入版权信息
    * @default true
    */

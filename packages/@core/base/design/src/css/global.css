@@ -1,0 +1,12 @@
+/* @import './tailwind.css';
+@import './nprogress.css'; */
+
+@import 'tailwindcss';
+@import './transition.css';
+@import './ui.css';
+
+#app,
+body,
+html {
+  @apply size-full;
+}
