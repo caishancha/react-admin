@@ -27,18 +27,6 @@
     @apply size-full;
   }
 
-  body {
-    min-height: 100vh;
-
-    /* pointer-events: auto !important; */
-
-    /* overflow: overlay; */
-
-    /* -webkit-font-smoothing: antialiased; */
-
-    /* -moz-osx-font-smoothing: grayscale; */
-  }
-
   a,
   a:active,
   a:hover,
@@ -72,12 +60,6 @@
   textarea::placeholder {
     @apply opacity-100;
   }
-
-  /* input:-webkit-autofill {
-    @apply border-none;
-
-    box-shadow: 0 0 0 1000px transparent inset;
-  } */
 
   input[type='number']::-webkit-inner-spin-button,
   input[type='number']::-webkit-outer-spin-button {
@@ -133,7 +115,7 @@
     @apply outline-primary left-0 top-0 h-full w-full p-1 opacity-100;
   }
 
-  .vben-link {
+  .ct-link {
     @apply text-primary hover:text-primary-hover active:text-primary-active cursor-pointer;
   }
 

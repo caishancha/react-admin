@@ -7,6 +7,8 @@ import type {
   LibraryPluginOptions,
 } from '../typing.ts';
 
+import { tailwindcss } from '@react-admin/tailwindcss-config';
+
 import viteReact from '@vitejs/plugin-react-swc';
 import { visualizer as viteVisualizerPlugin } from 'rollup-plugin-visualizer';
 import {
@@ -53,7 +55,7 @@ async function loadCommonPlugins(
   return [
     {
       condition: true,
-      plugins: () => [viteReact()],
+      plugins: () => [viteReact(), tailwindcss()],
     },
     {
       condition: injectMetadata,

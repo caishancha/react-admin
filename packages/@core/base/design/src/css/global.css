@@ -1,11 +1,4 @@
 @import '@react-admin/tailwindcss-config/tailwind.css';
 @import './transition.css';
 @import './ui.css';
-
-/* @import './nprogress.css'; */
-
-#app,
-body,
-html {
-  @apply size-full;
-}
+@import './nprogress.css';

@@ -597,6 +597,8 @@ importers:
 
   packages/@core/base/design: {}
 
+  packages/@core/base/icons: {}
+
   packages/@core/base/shared: {}
 
   packages/@core/base/typings: {}
