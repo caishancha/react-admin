@@ -12,6 +12,7 @@ catalog:
   '@changesets/git': ^3.0.4
   '@commitlint/cli': ^19.8.1
   '@commitlint/config-conventional': ^19.8.1
+  '@ctrl/tinycolor': ^4.2.0
   '@eslint/js': ^9.36.0
   '@iconify/json': ^2.2.388
   '@iconify/tailwind': ^1.2.0
@@ -19,15 +20,21 @@ catalog:
   '@jspm/generator': ^2.7.0
   '@manypkg/get-packages': 3.1.0
   '@pnpm/workspace.read-manifest': ^1000.2.4
+  '@radix-ui/react-slot': ^1.2.3
   '@stylistic/stylelint-plugin': ^4.0.0
   '@tailwindcss/postcss': ^4.1.13
   '@tailwindcss/typography': ^0.5.19
   '@tailwindcss/vite': ^4.1.13
   '@types/archiver': ^6.0.3
   '@types/html-minifier-terser': ^7.0.2
+  '@types/lodash.clonedeep': ^4.5.9
+  '@types/lodash.get': ^4.4.9
+  '@types/lodash.isequal': ^4.5.8
+  '@types/lodash.set': ^4.3.9
   '@types/node': ^24.5.2
-  '@types/react': ^19.1.14
-  '@types/react-dom': ^19.1.9
+  '@types/nprogress': ^0.2.3
+  '@types/react': 19.1.15
+  '@types/react-dom': 19.1.9
   '@vitejs/plugin-react': ^5.0.3
   '@vitejs/plugin-react-swc': ^4.1.0
   antd: ^5.27.4
@@ -37,6 +44,8 @@ catalog:
   chalk: ^5.6.2
   cheerio: ^1.1.2
   circular-dependency-scanner: ^2.3.0
+  class-variance-authority: ^0.7.1
+  clsx: ^2.1.1
   commitlint-plugin-function-rules: ^4.0.2
   consola: ^3.4.2
   cross-env: ^10.1.0
@@ -45,6 +54,7 @@ catalog:
   cz-git: ^1.12.0
   czg: ^1.12.0
   dayjs: ^1.11.18
+  defu: ^6.1.4
   depcheck: ^1.4.7
   dotenv: ^17.2.2
   eslint: ^9.36.0
@@ -63,7 +73,12 @@ catalog:
   html-minifier-terser: ^7.2.0
   husky: 9.1.7
   lint-staged: ^16.2.0
+  lodash.clonedeep: ^4.5.0
+  lodash.get: ^4.4.2
+  lodash.isequal: ^4.5.0
+  lodash.set: ^4.3.2
   nitropack: ^2.12.6
+  nprogress: ^0.2.0
   ora: ^9.0.0
   pkg-types: ^2.3.0
   postcss: 8.5.6
@@ -71,8 +86,8 @@ catalog:
   postcss-scss: ^4.0.9
   prettier: 3.6.2
   publint: 0.3.13
-  react: ^19.1.1
-  react-dom: ^19.1.1
+  react: 19.1.1
+  react-dom: 19.1.1
   react-router: ^7.9.3
   resolve.exports: ^2.0.3
   rimraf: 6.0.1
@@ -87,7 +102,9 @@ catalog:
   stylelint-order: ^7.0.0
   stylelint-prettier: ^5.0.3
   stylelint-scss: ^6.12.1
+  tailwind-merge: ^3.3.1
   tailwindcss: 4.1.13
+  theme-colors: ^0.1.0
   turbo: 2.5.6
   typescript: ^5.9.2
   typescript-eslint: ^8.44.0

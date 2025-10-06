@@ -6,264 +6,18 @@ settings:
 
 catalogs:
   default:
-    '@changesets/git':
-      specifier: ^3.0.4
-      version: 3.0.4
-    '@commitlint/cli':
-      specifier: ^19.8.1
-      version: 19.8.1
-    '@commitlint/config-conventional':
-      specifier: ^19.8.1
-      version: 19.8.1
-    '@eslint/js':
-      specifier: ^9.36.0
-      version: 9.36.0
-    '@iconify/json':
-      specifier: ^2.2.388
-      version: 2.2.389
-    '@iconify/tailwind4':
-      specifier: ^1.0.6
-      version: 1.0.6
-    '@jspm/generator':
-      specifier: ^2.7.0
-      version: 2.7.1
-    '@manypkg/get-packages':
-      specifier: 3.1.0
-      version: 3.1.0
-    '@pnpm/workspace.read-manifest':
-      specifier: ^1000.2.4
-      version: 1000.2.4
-    '@stylistic/stylelint-plugin':
-      specifier: ^4.0.0
-      version: 4.0.0
-    '@tailwindcss/vite':
-      specifier: ^4.1.13
-      version: 4.1.13
-    '@types/archiver':
-      specifier: ^6.0.3
-      version: 6.0.3
-    '@types/html-minifier-terser':
-      specifier: ^7.0.2
-      version: 7.0.2
-    '@types/node':
-      specifier: ^24.5.2
-      version: 24.6.0
+    '@radix-ui/react-slot':
+      specifier: ^1.2.3
+      version: 1.2.3
     '@types/react':
-      specifier: ^19.1.14
+      specifier: 19.1.15
       version: 19.1.15
-    '@types/react-dom':
-      specifier: ^19.1.9
-      version: 19.1.9
-    '@vitejs/plugin-react-swc':
-      specifier: ^4.1.0
-      version: 4.1.0
-    antd:
-      specifier: ^5.27.4
-      version: 5.27.4
-    archiver:
-      specifier: ^7.0.1
-      version: 7.0.1
-    cac:
-      specifier: ^6.7.14
-      version: 6.7.14
-    chalk:
-      specifier: ^5.6.2
-      version: 5.6.2
-    cheerio:
-      specifier: ^1.1.2
-      version: 1.1.2
-    circular-dependency-scanner:
-      specifier: ^2.3.0
-      version: 2.3.0
-    commitlint-plugin-function-rules:
-      specifier: ^4.0.2
-      version: 4.1.0
-    consola:
-      specifier: ^3.4.2
-      version: 3.4.2
-    cross-env:
-      specifier: ^10.1.0
-      version: 10.1.0
-    cspell:
-      specifier: ^9.2.1
-      version: 9.2.1
-    cz-git:
-      specifier: ^1.12.0
-      version: 1.12.0
-    czg:
-      specifier: ^1.12.0
-      version: 1.12.0
-    dayjs:
-      specifier: ^1.11.18
-      version: 1.11.18
-    depcheck:
-      specifier: ^1.4.7
-      version: 1.4.7
-    dotenv:
-      specifier: ^17.2.2
-      version: 17.2.3
-    eslint:
-      specifier: ^9.36.0
-      version: 9.36.0
-    eslint-config-prettier:
-      specifier: ^10.1.8
-      version: 10.1.8
-    eslint-config-turbo:
-      specifier: 2.5.6
-      version: 2.5.6
-    eslint-plugin-prettier:
-      specifier: ^5.5.4
-      version: 5.5.4
-    eslint-plugin-react:
-      specifier: ^7.37.5
-      version: 7.37.5
-    eslint-plugin-react-hooks:
-      specifier: ^5.2.0
-      version: 5.2.0
-    eslint-plugin-react-refresh:
-      specifier: ^0.4.20
-      version: 0.4.22
-    eslint-plugin-unused-imports:
-      specifier: ^4.2.0
-      version: 4.2.0
-    execa:
-      specifier: ^9.6.0
-      version: 9.6.0
-    find-up:
-      specifier: ^8.0.0
-      version: 8.0.0
-    get-port:
-      specifier: ^7.1.0
-      version: 7.1.0
-    globals:
-      specifier: ^16.4.0
-      version: 16.4.0
-    happy-dom:
-      specifier: ^19.0.2
-      version: 19.0.2
-    html-minifier-terser:
-      specifier: ^7.2.0
-      version: 7.2.0
-    husky:
-      specifier: 9.1.7
-      version: 9.1.7
-    lint-staged:
-      specifier: ^16.2.0
-      version: 16.2.3
-    nitropack:
-      specifier: ^2.12.6
-      version: 2.12.6
-    ora:
-      specifier: ^9.0.0
-      version: 9.0.0
-    pkg-types:
-      specifier: ^2.3.0
-      version: 2.3.0
-    postcss:
-      specifier: 8.5.6
-      version: 8.5.6
-    postcss-html:
-      specifier: ^1.8.0
-      version: 1.8.0
-    postcss-scss:
-      specifier: ^4.0.9
-      version: 4.0.9
-    prettier:
-      specifier: 3.6.2
-      version: 3.6.2
-    publint:
-      specifier: 0.3.13
-      version: 0.3.13
+    class-variance-authority:
+      specifier: ^0.7.1
+      version: 0.7.1
     react:
-      specifier: ^19.1.1
+      specifier: 19.1.1
       version: 19.1.1
-    react-dom:
-      specifier: ^19.1.1
-      version: 19.1.1
-    react-router:
-      specifier: ^7.9.3
-      version: 7.9.3
-    resolve.exports:
-      specifier: ^2.0.3
-      version: 2.0.3
-    rimraf:
-      specifier: 6.0.1
-      version: 6.0.1
-    rollup:
-      specifier: ^4.52.3
-      version: 4.52.3
-    rollup-plugin-visualizer:
-      specifier: ^6.0.3
-      version: 6.0.3
-    sass:
-      specifier: ^1.93.2
-      version: 1.93.2
-    stylelint:
-      specifier: ^16.24.0
-      version: 16.24.0
-    stylelint-config-recess-order:
-      specifier: ^7.3.0
-      version: 7.3.0
-    stylelint-config-recommended:
-      specifier: ^17.0.0
-      version: 17.0.0
-    stylelint-config-recommended-scss:
-      specifier: ^16.0.1
-      version: 16.0.2
-    stylelint-config-standard:
-      specifier: ^39.0.0
-      version: 39.0.0
-    stylelint-order:
-      specifier: ^7.0.0
-      version: 7.0.0
-    stylelint-prettier:
-      specifier: ^5.0.3
-      version: 5.0.3
-    stylelint-scss:
-      specifier: ^6.12.1
-      version: 6.12.1
-    tailwindcss:
-      specifier: 4.1.13
-      version: 4.1.13
-    turbo:
-      specifier: 2.5.6
-      version: 2.5.6
-    typescript:
-      specifier: ^5.9.2
-      version: 5.9.2
-    typescript-eslint:
-      specifier: ^8.44.0
-      version: 8.45.0
-    unbuild:
-      specifier: ^3.6.1
-      version: 3.6.1
-    vite:
-      specifier: 7.1.7
-      version: 7.1.7
-    vite-plugin-compression2:
-      specifier: ^2.2.1
-      version: 2.2.1
-    vite-plugin-dts:
-      specifier: ^4.5.4
-      version: 4.5.4
-    vite-plugin-html:
-      specifier: ^3.2.2
-      version: 3.2.2
-    vite-plugin-lazy-import:
-      specifier: ^1.0.7
-      version: 1.0.7
-    vite-plugin-pwa:
-      specifier: ^1.0.3
-      version: 1.0.3
-    vite-plugin-react-click-to-component:
-      specifier: ^4.0.0
-      version: 4.0.0
-    vitest:
-      specifier: ^3.2.4
-      version: 3.2.4
-    zustand:
-      specifier: ^5.0.8
-      version: 5.0.8
 
 importers:
 
@@ -599,11 +353,80 @@ importers:
 
   packages/@core/base/icons: {}
 
-  packages/@core/base/shared: {}
+  packages/@core/base/shared:
+    dependencies:
+      '@ctrl/tinycolor':
+        specifier: 'catalog:'
+        version: 4.2.0
+      clsx:
+        specifier: 'catalog:'
+        version: 2.1.1
+      dayjs:
+        specifier: 'catalog:'
+        version: 1.11.18
+      defu:
+        specifier: 'catalog:'
+        version: 6.1.4
+      lodash.clonedeep:
+        specifier: 'catalog:'
+        version: 4.5.0
+      lodash.get:
+        specifier: 'catalog:'
+        version: 4.4.2
+      lodash.isequal:
+        specifier: 'catalog:'
+        version: 4.5.0
+      lodash.set:
+        specifier: 'catalog:'
+        version: 4.3.2
+      nprogress:
+        specifier: 'catalog:'
+        version: 0.2.0
+      tailwind-merge:
+        specifier: 'catalog:'
+        version: 3.3.1
+      theme-colors:
+        specifier: 'catalog:'
+        version: 0.1.0
+    devDependencies:
+      '@types/lodash.clonedeep':
+        specifier: 'catalog:'
+        version: 4.5.9
+      '@types/lodash.get':
+        specifier: 'catalog:'
+        version: 4.4.9
+      '@types/lodash.isequal':
+        specifier: 'catalog:'
+        version: 4.5.8
+      '@types/lodash.set':
+        specifier: 'catalog:'
+        version: 4.3.9
+      '@types/nprogress':
+        specifier: 'catalog:'
+        version: 0.2.3
 
   packages/@core/base/typings: {}
 
-  packages/@core/ui-kit/shadcn-ui: {}
+  packages/@core/ui-kit/radix-ui: {}
+
+  packages/@core/ui-kit/shadcn-ui:
+    dependencies:
+      '@radix-ui/react-slot':
+        specifier: 'catalog:'
+        version: 1.2.3(@types/react@19.1.15)(react@19.1.1)
+      '@react-admin-core/shared':
+        specifier: workspace:*
+        version: link:../../base/shared
+      class-variance-authority:
+        specifier: 'catalog:'
+        version: 0.7.1
+      react:
+        specifier: 'catalog:'
+        version: 19.1.1
+    devDependencies:
+      '@types/react':
+        specifier: 'catalog:'
+        version: 19.1.15
 
   packages/styles:
     dependencies:
@@ -1597,6 +1420,10 @@ packages:
     peerDependencies:
       postcss-selector-parser: ^7.0.0
 
+  '@ctrl/tinycolor@4.2.0':
+    resolution: {integrity: sha512-kzyuwOAQnXJNLS9PSyrk0CWk35nWJW/zl/6KvnTBMFK65gm7U1/Z5BqjxeapjZCIhQcM/DsrEmcbRwDyXyXK4A==}
+    engines: {node: '>=14'}
+
   '@dual-bundle/import-meta-resolve@4.2.1':
     resolution: {integrity: sha512-id+7YRUgoUX6CgV0DtuhirQWodeeA7Lf4i2x71JS/vtA5pRb/hIGWlw+G6MeXvsM+MXrz0VAydTGElX1rAfgPg==}
 
@@ -2082,6 +1909,24 @@ packages:
   '@publint/pack@0.1.2':
     resolution: {integrity: sha512-S+9ANAvUmjutrshV4jZjaiG8XQyuJIZ8a4utWmN/vW1sgQ9IfBnPndwkmQYw53QmouOIytT874u65HEmu6H5jw==}
     engines: {node: '>=18'}
+
+  '@radix-ui/react-compose-refs@1.1.2':
+    resolution: {integrity: sha512-z4eqJvfiNnFMHIIvXP3CY57y2WJs5g2v3X0zm9mEJkrkNv4rDxu+sg9Jh8EkXyeqBkB7SOcboo9dMVqhyrACIg==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-slot@1.2.3':
+    resolution: {integrity: sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
 
   '@rc-component/async-validator@5.0.4':
     resolution: {integrity: sha512-qgGdcVIF604M9EqjNF0hbUTz42bz/RDtxWdWuU5EQe3hi7M8ob54B6B35rOsvX5eSvIHIzT9iH1R3n+hk3CGfg==}
@@ -2621,6 +2466,21 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
+  '@types/lodash.clonedeep@4.5.9':
+    resolution: {integrity: sha512-19429mWC+FyaAhOLzsS8kZUsI+/GmBAQ0HFiCPsKGU+7pBXOQWhyrY6xNNDwUSX8SMZMJvuFVMF9O5dQOlQK9Q==}
+
+  '@types/lodash.get@4.4.9':
+    resolution: {integrity: sha512-J5dvW98sxmGnamqf+/aLP87PYXyrha9xIgc2ZlHl6OHMFR2Ejdxep50QfU0abO1+CH6+ugx+8wEUN1toImAinA==}
+
+  '@types/lodash.isequal@4.5.8':
+    resolution: {integrity: sha512-uput6pg4E/tj2LGxCZo9+y27JNyB2OZuuI/T5F+ylVDYuqICLG2/ktjxx0v6GvVntAf8TvEzeQLcV0ffRirXuA==}
+
+  '@types/lodash.set@4.3.9':
+    resolution: {integrity: sha512-KOxyNkZpbaggVmqbpr82N2tDVTx05/3/j0f50Es1prxrWB0XYf9p3QNxqcbWb7P1Q9wlvsUSlCFnwlPCIJ46PQ==}
+
+  '@types/lodash@4.17.20':
+    resolution: {integrity: sha512-H3MHACvFUEiujabxhaI/ImO6gUrd8oOurg7LQtS7mbwIXA/cUqWrvBsaeJ23aZEPk1TAYkurjfMbSELfoCXlGA==}
+
   '@types/minimatch@3.0.5':
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
 
@@ -2632,6 +2492,9 @@ packages:
 
   '@types/node@24.6.0':
     resolution: {integrity: sha512-F1CBxgqwOMc4GKJ7eY22hWhBVQuMYTtqI8L0FcszYcpYX0fzfDGpez22Xau8Mgm7O9fI+zA/TYIdq3tGWfweBA==}
+
+  '@types/nprogress@0.2.3':
+    resolution: {integrity: sha512-k7kRA033QNtC+gLc4VPlfnue58CM1iQLgn1IMAU8VPHGOj7oIHPp9UlhedEnD/Gl8evoCjwkZjlBORtZ3JByUA==}
 
   '@types/parse-json@4.0.2':
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
@@ -3163,6 +3026,9 @@ packages:
   citty@0.1.6:
     resolution: {integrity: sha512-tskPPKEs8D2KPafUypv2gxwJP8h/OaJmC82QQGGDQcHvXX43xF2VDACcJVmZ0EuSxkpO9Kc4MlrA3q0+FG58AQ==}
 
+  class-variance-authority@0.7.1:
+    resolution: {integrity: sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==}
+
   classnames@2.5.1:
     resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
 
@@ -3204,6 +3070,10 @@ packages:
   cliui@8.0.1:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
     engines: {node: '>=12'}
+
+  clsx@2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
+    engines: {node: '>=6'}
 
   cluster-key-slot@1.1.2:
     resolution: {integrity: sha512-RMr0FhtfXemyinomL4hrWcYJxmX6deFdCxpJzhDttxgO1+bcCnkk+9drydLVDmAMG7NE6aN/fl4F7ucU/90gAA==}
@@ -4912,14 +4782,25 @@ packages:
   lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
 
+  lodash.clonedeep@4.5.0:
+    resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
+
   lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
 
   lodash.defaults@4.2.0:
     resolution: {integrity: sha512-qjxPLHd3r5DnsdGacqOMU6pb/avJzdh9tFX2ymgoZE27BmjXrNy/y4LoaiTeAb+O3gL8AfpJGtqfX/ae2leYYQ==}
 
+  lodash.get@4.4.2:
+    resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
+
   lodash.isarguments@3.1.0:
     resolution: {integrity: sha512-chi4NHZlZqZD18a0imDHnZPrDeBbTtVN7GXMwuGdRH9qotxAjYs3aVLKc7zNOG9eddR5Ksd8rvFEBc9SsggPpg==}
+
+  lodash.isequal@4.5.0:
+    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    deprecated: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
 
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
@@ -4935,6 +4816,9 @@ packages:
 
   lodash.mergewith@4.6.2:
     resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
+
+  lodash.set@4.3.2:
+    resolution: {integrity: sha512-4hNPN5jlm/N/HLMCO43v8BXKq9Z7QdAGc/VGrRD61w8gN9g/6jF9A4L1pbUgBLCffi0w9VsXfTOij5x8iTyFvg==}
 
   lodash.snakecase@4.1.1:
     resolution: {integrity: sha512-QZ1d4xoBHYUeuouhEq3lk3Uq7ldgyFXGBhg04+oRLnIz8o9T65Eh+8YdroUwn846zchkA9yDsDl5CVVaV2nqYw==}
@@ -5239,6 +5123,9 @@ packages:
   npm-run-path@6.0.0:
     resolution: {integrity: sha512-9qny7Z9DsQU8Ou39ERsPU4OZQlSTP47ShQzuKZ6PRXpYLtIFgl/DEBYEXKlvcEa+9tHVcK8CF81Y2V72qaZhWA==}
     engines: {node: '>=18'}
+
+  nprogress@0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
@@ -6642,6 +6529,9 @@ packages:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
 
+  tailwind-merge@3.3.1:
+    resolution: {integrity: sha512-gBXpgUm/3rp1lMZZrM/w7D8GKqshif0zAymAhbCyIt8KMe+0v9DQ7cdYLR4FHH/cKpdTXb+A/tKKU3eolfsI+g==}
+
   tailwindcss@4.1.13:
     resolution: {integrity: sha512-i+zidfmTqtwquj4hMEwdjshYYgMbOrPzb9a0M3ZgNa0JMoZeFC6bxZvO8yr8ozS6ix2SDz0+mvryPeBs2TFE+w==}
 
@@ -6678,6 +6568,9 @@ packages:
   text-extensions@2.4.0:
     resolution: {integrity: sha512-te/NtwBwfiNRLf9Ijqx3T0nlqZiQ2XrrtBvu+cLL8ZRrGkO0NHTug8MYFKyoSrv/sHTaSKfilUkizV6XhxMJ3g==}
     engines: {node: '>=8'}
+
+  theme-colors@0.1.0:
+    resolution: {integrity: sha512-6gTEHQqWlQNiOEGHCSSQmU//E5SnXHJ4H7oHQOD8x77CvNYNQAmt73dqR71mzw5ULV87zaHLxK5pIBnsToFuZw==}
 
   throttle-debounce@5.0.2:
     resolution: {integrity: sha512-B71/4oyj61iNH0KeCamLuE2rmKuTO5byTOSVwECM5FA7TiAiAW+UqTKZ9ERueC4qvgSttUhdmq1mXC3kJqGX7A==}
@@ -8508,6 +8401,8 @@ snapshots:
     dependencies:
       postcss-selector-parser: 7.1.0
 
+  '@ctrl/tinycolor@4.2.0': {}
+
   '@dual-bundle/import-meta-resolve@4.2.1': {}
 
   '@emotion/hash@0.8.0': {}
@@ -8961,6 +8856,19 @@ snapshots:
   '@poppinss/exception@1.2.2': {}
 
   '@publint/pack@0.1.2': {}
+
+  '@radix-ui/react-compose-refs@1.1.2(@types/react@19.1.15)(react@19.1.1)':
+    dependencies:
+      react: 19.1.1
+    optionalDependencies:
+      '@types/react': 19.1.15
+
+  '@radix-ui/react-slot@1.2.3(@types/react@19.1.15)(react@19.1.1)':
+    dependencies:
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.1.15)(react@19.1.1)
+      react: 19.1.1
+    optionalDependencies:
+      '@types/react': 19.1.15
 
   '@rc-component/async-validator@5.0.4':
     dependencies:
@@ -9425,6 +9333,24 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
+  '@types/lodash.clonedeep@4.5.9':
+    dependencies:
+      '@types/lodash': 4.17.20
+
+  '@types/lodash.get@4.4.9':
+    dependencies:
+      '@types/lodash': 4.17.20
+
+  '@types/lodash.isequal@4.5.8':
+    dependencies:
+      '@types/lodash': 4.17.20
+
+  '@types/lodash.set@4.3.9':
+    dependencies:
+      '@types/lodash': 4.17.20
+
+  '@types/lodash@4.17.20': {}
+
   '@types/minimatch@3.0.5': {}
 
   '@types/node@12.20.55': {}
@@ -9436,6 +9362,8 @@ snapshots:
   '@types/node@24.6.0':
     dependencies:
       undici-types: 7.13.0
+
+  '@types/nprogress@0.2.3': {}
 
   '@types/parse-json@4.0.2': {}
 
@@ -10188,6 +10116,10 @@ snapshots:
     dependencies:
       consola: 3.4.2
 
+  class-variance-authority@0.7.1:
+    dependencies:
+      clsx: 2.1.1
+
   classnames@2.5.1: {}
 
   clean-css@5.3.3:
@@ -10234,6 +10166,8 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
       wrap-ansi: 7.0.0
+
+  clsx@2.1.1: {}
 
   cluster-key-slot@1.1.2: {}
 
@@ -12090,11 +12024,17 @@ snapshots:
 
   lodash.camelcase@4.3.0: {}
 
+  lodash.clonedeep@4.5.0: {}
+
   lodash.debounce@4.0.8: {}
 
   lodash.defaults@4.2.0: {}
 
+  lodash.get@4.4.2: {}
+
   lodash.isarguments@3.1.0: {}
+
+  lodash.isequal@4.5.0: {}
 
   lodash.isplainobject@4.0.6: {}
 
@@ -12105,6 +12045,8 @@ snapshots:
   lodash.merge@4.6.2: {}
 
   lodash.mergewith@4.6.2: {}
+
+  lodash.set@4.3.2: {}
 
   lodash.snakecase@4.1.1: {}
 
@@ -12473,6 +12415,8 @@ snapshots:
     dependencies:
       path-key: 4.0.0
       unicorn-magic: 0.3.0
+
+  nprogress@0.2.0: {}
 
   nth-check@2.1.1:
     dependencies:
@@ -14051,6 +13995,8 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
+  tailwind-merge@3.3.1: {}
+
   tailwindcss@4.1.13: {}
 
   tapable@2.2.3: {}
@@ -14096,6 +14042,8 @@ snapshots:
       - react-native-b4a
 
   text-extensions@2.4.0: {}
+
+  theme-colors@0.1.0: {}
 
   throttle-debounce@5.0.2: {}
 
