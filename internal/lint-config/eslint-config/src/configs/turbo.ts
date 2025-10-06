@@ -1,6 +1,6 @@
 import type { Linter } from 'eslint';
 import { defineConfig } from 'eslint/config';
-import { interopDefault } from '../utils';
+import { interopDefault } from '../utils.ts';
 
 export async function turbo(): Promise<Linter.Config[]> {
   const [turboEslint] = await Promise.all([

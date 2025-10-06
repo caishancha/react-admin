@@ -1,5 +1,5 @@
 import type { Linter } from 'eslint';
-import { interopDefault } from '../utils';
+import { interopDefault } from '../utils.ts';
 import { defineConfig } from 'eslint/config';
 
 export async function prettier(): Promise<Linter.Config[]> {
