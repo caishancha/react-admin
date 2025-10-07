@@ -16,15 +16,15 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
+      "types": "./src/index.ts",
       "development": "./src/index.ts",
-      "import": "./dist/index.mjs",
       "default": "./dist/index.mjs"
     },
-    "./tailwindcss": {
-      "types": "./dist/tailwind-css.d.ts",
-      "development": "./src/tailwind-css/index.ts",
-      "default": "./dist/tailwind-css.mjs"
+    "./css": {
+      "types": "./src/css/index.ts",
+      "development": "./src/css/index.ts",
+      "import": "./dist/css/index.mjs",
+      "default": "./dist/css/index.mjs"
     },
     "./*": "./*"
   },

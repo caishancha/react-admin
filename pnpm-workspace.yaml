@@ -20,7 +20,7 @@ catalog:
   '@jspm/generator': ^2.7.0
   '@manypkg/get-packages': 3.1.0
   '@pnpm/workspace.read-manifest': ^1000.2.4
-  '@radix-ui/react-slot': ^1.2.3
+  '@radix-ui/react-slot': 1.2.3
   '@stylistic/stylelint-plugin': ^4.0.0
   '@tailwindcss/postcss': ^4.1.14
   '@tailwindcss/typography': ^0.5.19
@@ -105,6 +105,7 @@ catalog:
   tailwind-merge: ^3.3.1
   tailwindcss: 4.1.13
   theme-colors: ^0.1.0
+  tsdown: ^0.15.6
   turbo: 2.5.6
   typescript: ^5.9.2
   typescript-eslint: ^8.44.0

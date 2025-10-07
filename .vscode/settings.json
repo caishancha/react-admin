@@ -163,8 +163,7 @@
     "*.env": "$(capture).env.*",
     "README.md": "README*,CHANGELOG*,LICENSE,CNAME",
     "package.json": "pnpm-lock.yaml,pnpm-workspace.yaml,.gitattributes,.gitignore,.gitpod.yml,.npmrc,.node-version,.git*,.tazerc.json",
-    "eslint.config.mjs": ".eslintignore,.prettierignore,.stylelintignore,.commitlintrc.*,commitlint.config.*,.prettierrc.*,prettier.config.mjs,stylelint.config.*,.lintstagedrc.mjs,lint-staged.config.mjs, cspell.json, .browserslistrc,lefthook.yml",
-    "tailwind.config.mjs": "postcss.*"
+    "eslint.config.mjs": ".eslintignore,.prettierignore,.stylelintignore,.commitlintrc.*,commitlint.config.*,.prettierrc.*,prettier.config.mjs,stylelint.config.*,.lintstagedrc.mjs,lint-staged.config.mjs, cspell.json, .browserslistrc,lefthook.yml"
   },
 
   "javascript.format.semicolons": "remove",
