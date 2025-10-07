@@ -6,7 +6,8 @@
   "author": "caishancha",
   "license": "MIT",
   "scripts": {
-    "build": "pnpm unbuild"
+    "build": "pnpm unbuild",
+    "stub": "pnpm unbuild --stub"
   },
   "files": [
     "dist"

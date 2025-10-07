@@ -1,4 +1,4 @@
-@import '@react-admin/tailwindcss-config/tailwind.css';
 @import './transition.css';
 @import './ui.css';
-@import './nprogress.css';
+
+/* @import './nprogress.css'; */

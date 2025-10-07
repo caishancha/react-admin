@@ -1,8 +1,7 @@
 /* @import 'tailwindcss' prefix(tw); */
 @import 'tailwindcss';
 @import './theme.css';
-@import './tailwind.css';
 
-@config '@react-admin/tailwindcss-config/config';
+/* @import './tailwind.css'; */
 
 @plugin '@iconify/tailwind4';

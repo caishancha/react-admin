@@ -17,21 +17,21 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
+      "development": "./src/index.ts",
       "import": "./dist/index.mjs",
       "default": "./dist/index.mjs"
     },
-    "./config": {
-      "types": "./src/config/index.ts",
-      "import": "./dist/config/index.mjs",
-      "default": "./dist/config/index.mjs"
+    "./tailwindcss": {
+      "types": "./dist/tailwind-css.d.ts",
+      "development": "./src/tailwind-css/index.ts",
+      "default": "./dist/tailwind-css.mjs"
     },
-    "./tailwind.css": {
-      "default": "./src/css/index.css"
-    }
+    "./*": "./*"
   },
   "dependencies": {
     "@iconify/json": "catalog:",
     "@iconify/tailwind4": "catalog:",
+    "@manypkg/get-packages": "catalog:",
     "@tailwindcss/vite": "catalog:",
     "tailwindcss": "catalog:"
   }

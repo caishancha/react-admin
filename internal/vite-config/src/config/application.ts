@@ -70,11 +70,6 @@ function defineApplicationConfig(userConfigPromise?: DefineApplicationOptions) {
         drop: isBuild ? ['console', 'debugger'] : [],
         legalComments: 'none',
       },
-      resolve: {
-        alias: {
-          '#': '/src',
-        },
-      },
       plugins,
       server: {
         host: true,

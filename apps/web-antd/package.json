@@ -17,6 +17,7 @@
   "dependencies": {
     "@react-admin/types": "workspace:*",
     "@react-admin/styles": "workspace:*",
+    "@react-admin-core/shadcn-ui": "workspace:*",
     "antd": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",

@@ -1,2 +1,2 @@
 export { buttonVariants } from './button';
-export { Button } from './index.jsx';
+export { Button } from './button.tsx';
