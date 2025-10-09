@@ -1,7 +1,7 @@
 /* @import 'tailwindcss' prefix(tw); */
 @import 'tailwindcss';
-
-/* @import './theme.css'; */
+@import './utility.css';
+@import './theme.css';
 
 /* @import './tailwind.css'; */
 
@@ -10,3 +10,4 @@
 
 /* 显式注册源 */
 @source '../../../../packages/@core/ui-kit/shadcn-ui';
+@source inline("dark");

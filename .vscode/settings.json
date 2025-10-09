@@ -47,6 +47,9 @@
     "source.fixAll": "explicit",
     "source.organizeImports": "never"
   },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -93,7 +96,8 @@
     "*.art": "html",
     "**/tsconfig.json": "jsonc",
     "*.json": "jsonc",
-    "package.json": "json"
+    "package.json": "json",
+    "*.css": "tailwindcss"
   },
   "files.exclude": {
     "**/.eslintcache": true,

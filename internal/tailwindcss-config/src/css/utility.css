@@ -1,0 +1,19 @@
+@utility z-100 {
+  z-index: 100;
+}
+
+@utility z-1000 {
+  z-index: 1000;
+}
+
+@utility z-9999 {
+  z-index: 9999;
+}
+
+@utility duration-2000 {
+  transition-duration: 2000ms;
+}
+
+@utility duration-3000 {
+  transition-duration: 3000ms;
+}

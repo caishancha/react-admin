@@ -50,7 +50,8 @@
     "vitepress",
     "vnode",
     "yxxx",
-    "oklab"
+    "oklab",
+    "oklch"
   ],
   "ignorePaths": [
     "**/node_modules/**",

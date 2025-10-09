@@ -6,10 +6,8 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-      <div className="text-red-500">1223</div>
-      <div className="w-50 rounded-lg">
-        <Button>Click me</Button>
-      </div>
+      <div className="text-red-500 rounded-md">1223</div>
+      <Button variant="outline">Button</Button>
     </>
   );
 }

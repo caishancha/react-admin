@@ -3,7 +3,8 @@
   "extends": "@react-admin/ts-config/node.json",
   "compilerOptions": {
     "module": "preserve",
-    "moduleResolution": "bundler"
+    "moduleResolution": "bundler",
+    "types": ["node", "vite/client"]
   },
   "include": ["src"],
   "exclude": ["node_modules"]
