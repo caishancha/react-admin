@@ -2,7 +2,6 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "@react-admin/ts-config/web-pkg.json",
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
       "@react-admin-core/shadcn-ui/*": ["./src/*"]
     }
