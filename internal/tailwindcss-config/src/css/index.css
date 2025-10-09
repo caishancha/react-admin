@@ -2,12 +2,12 @@
 @import 'tailwindcss';
 @import './utility.css';
 @import './theme.css';
-
-/* @import './tailwind.css'; */
+@import './tailwind.css';
 
 /* 注册插件 */
 @plugin '@iconify/tailwind4';
 
 /* 显式注册源 */
+@source '../../../../packages/@core/base/design';
 @source '../../../../packages/@core/ui-kit/shadcn-ui';
 @source inline("dark");

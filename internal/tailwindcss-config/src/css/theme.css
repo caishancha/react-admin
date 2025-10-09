@@ -7,10 +7,11 @@
   --animate-float: 'float 5s linear 0ms infinite';
 
   /* 圆角 */
-  --radius-lg: 'var(--radius)';
-  --radius-md: 'calc(var(--radius) - 2px)';
+  --radius-lg: var(--radius);
+
+  /* --radius-md: 'calc(var(--radius) - 2px)';
   --radius-sm: 'calc(var(--radius) - 4px)';
-  --radius-xs: 'calc(var(--radius) + 4px)';
+  --radius-xs: 'calc(var(--radius) + 4px)'; */
 
   /* 阴影 */
   --shadow-float:
@@ -77,6 +78,7 @@
 }
 
 @theme inline {
+  /* shadcn ui 颜色变量 */
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-background: var(--background);
@@ -84,52 +86,161 @@
   --color-border: var(--border);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-ring: var(--ring);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  /* 自定义颜色 */
+  --color-header: var(--header);
+  --color-heavy: var(--heavy);
+  --color-heavy-foreground: var(--heavy-foreground);
+  --color-main: var(--main);
+  --color-overlay: var(--overlay);
+  --color-overlay-content: var(--overlay-content);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-deep: var(--sidebar-deep);
 
   /* 基于 destructive 颜色的变量 */
   --color-destructive: var(--destructive);
-  --color-destructive-50: var(--destructive-50);
-  --color-destructive-100: var(--destructive-100);
-  --color-destructive-200: var(--destructive-200);
-  --color-destructive-300: var(--destructive-300);
-  --color-destructive-400: var(--destructive-400);
-  --color-destructive-500: var(--destructive-500);
-  --color-destructive-600: var(--destructive-600);
-  --color-destructive-700: var(--destructive-700);
-  --color-destructive-800: var(--destructive-800);
-  --color-destructive-900: var(--destructive-900);
-  --color-destructive-active: var(--destructive-700);
-  --color-destructive-background-light: var(--destructive-200);
-  --color-destructive-background-lighter: var(--destructive-100);
-  --color-destructive-background-lightest: var(--destructive-50);
-  --color-destructive-border: var(--destructive-400);
-  --color-destructive-border-light: var(--destructive-300);
+  --color-destructive-50: var(--color-red-50);
+  --color-destructive-100: var(--color-red-100);
+  --color-destructive-200: var(--color-red-200);
+  --color-destructive-300: var(--color-red-300);
+  --color-destructive-400: var(--color-red-400);
+  --color-destructive-500: var(--color-red-500);
+  --color-destructive-600: var(--color-red-600);
+  --color-destructive-700: var(--color-red-700);
+  --color-destructive-800: var(--color-red-800);
+  --color-destructive-900: var(--color-red-900);
+  --color-destructive-active: var(--color-destructive-700);
+  --color-destructive-background-light: var(--color-destructive-200);
+  --color-destructive-background-lighter: var(--color-destructive-100);
+  --color-destructive-background-lightest: var(--color-destructive-50);
+  --color-destructive-border: var(--color-destructive-400);
+  --color-destructive-border-light: var(--color-destructive-300);
   --color-destructive-foreground: var(--destructive-foreground);
-  --color-destructive-hover: var(--destructive-600);
-  --color-destructive-text: var(--destructive-500);
-  --color-destructive-text-active: var(--destructive-700);
-  --color-destructive-text-hover: var(--destructive-600);
+  --color-destructive-hover: var(--color-destructive-600);
+  --color-destructive-text: var(--color-destructive-500);
+  --color-destructive-text-active: var(--color-destructive-700);
+  --color-destructive-text-hover: var(--color-destructive-600);
 
   /* 基于 primary 颜色的变量 */
   --color-primary: var(--primary);
-  --color-primary-50: var(--primary-50);
-  --color-primary-100: var(--primary-100);
-  --color-primary-200: var(--primary-200);
-  --color-primary-300: var(--primary-300);
-  --color-primary-400: var(--primary-400);
-  --color-primary-500: var(--primary-500);
-  --color-primary-600: var(--primary-600);
-  --color-primary-700: var(--primary-700);
-  --color-primary-800: var(--primary-800);
-  --color-primary-900: var(--primary-900);
-  --color-primary-active: var(--primary-700);
-  --color-primary-background-light: var(--primary-200);
-  --color-primary-background-lighter: var(--primary-100);
-  --color-primary-background-lightest: var(--primary-50);
-  --color-primary-border: var(--primary-400);
-  --color-primary-border-light: var(--primary-300);
+  --color-primary-50: var(--color-sky-50);
+  --color-primary-100: var(--color-sky-100);
+  --color-primary-200: var(--color-sky-200);
+  --color-primary-300: var(--color-sky-300);
+  --color-primary-400: var(--color-sky-400);
+  --color-primary-500: var(--color-sky-500);
+  --color-primary-600: var(--color-sky-600);
+  --color-primary-700: var(--color-sky-700);
+  --color-primary-800: var(--color-sky-800);
+  --color-primary-900: var(--color-sky-900);
+  --color-primary-active: var(--color-primary-700);
+  --color-primary-background-light: var(--color-primary-200);
+  --color-primary-background-lighter: var(--color-primary-100);
+  --color-primary-background-lightest: var(--color-primary-50);
+  --color-primary-border: var(--color-primary-400);
+  --color-primary-border-light: var(--color-primary-300);
   --color-primary-foreground: var(--primary-foreground);
-  --color-primary-hover: var(--primary-600);
-  --color-primary-text: var(--primary-500);
-  --color-primary-text-active: var(--primary-700);
-  --color-primary-text-hover: var(--primary-600);
+  --color-primary-hover: var(--color-primary-600);
+  --color-primary-text: var(--color-primary-500);
+  --color-primary-text-active: var(--color-primary-700);
+  --color-primary-text-hover: var(--color-primary-600);
+
+  /* 基于 green 颜色的变量 */
+  --color-green: var(--success);
+  --color-green-active: var(--color-green-700);
+  --color-green-background-light: var(--color-green-200);
+  --color-green-background-lighter: var(--color-green-100);
+  --color-green-background-lightest: var(--color-green-50);
+  --color-green-border: var(--color-green-400);
+  --color-green-border-light: var(--color-green-300);
+  --color-green-foreground: var(--success-foreground);
+  --color-green-hover: var(--color-green-600);
+  --color-green-text: var(--color-green-500);
+  --color-green-text-active: var(--color-green-700);
+  --color-green-text-hover: var(--color-green-600);
+
+  /* 基于 red 颜色的变量 */
+  --color-red: var(--destructive);
+  --color-red-active: var(--color-red-700);
+  --color-red-background-light: var(--color-red-200);
+  --color-red-background-lighter: var(--color-red-100);
+  --color-red-background-lightest: var(--color-red-50);
+  --color-red-border: var(--color-red-400);
+  --color-red-border-light: var(--color-red-300);
+  --color-red-foreground: var(--destructive-foreground);
+  --color-red-hover: var(--color-red-600);
+  --color-red-text: var(--color-red-500);
+  --color-red-text-active: var(--color-red-700);
+  --color-red-text-hover: var(--color-red-600);
+
+  /* 基于 success 颜色的变量 */
+  --color-success: var(--success);
+  --color-success-50: var(--color-green-50);
+  --color-success-100: var(--color-green-100);
+  --color-success-200: var(--color-green-200);
+  --color-success-300: var(--color-green-300);
+  --color-success-400: var(--color-green-400);
+  --color-success-500: var(--color-green-500);
+  --color-success-600: var(--color-green-600);
+  --color-success-700: var(--color-green-700);
+  --color-success-800: var(--color-green-800);
+  --color-success-900: var(--color-green-900);
+  --color-success-active: var(--color-green-700);
+  --color-success-background-light: var(--color-green-200);
+  --color-success-background-lighter: var(--color-green-100);
+  --color-success-background-lightest: var(--color-green-50);
+  --color-success-border: var(--color-green-400);
+  --color-success-border-light: var(--color-green-300);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-hover: var(--color-green-600);
+  --color-success-text: var(--color-green-500);
+  --color-success-text-active: var(--color-green-700);
+  --color-success-text-hover: var(--color-green-600);
+
+  /* 基于 warning 颜色的变量 */
+  --color-warning: var(--warning);
+  --color-warning-50: var(--color-orange-50);
+  --color-warning-100: var(--color-orange-100);
+  --color-warning-200: var(--color-orange-200);
+  --color-warning-300: var(--color-orange-300);
+  --color-warning-400: var(--color-orange-400);
+  --color-warning-500: var(--color-orange-500);
+  --color-warning-600: var(--color-orange-600);
+  --color-warning-700: var(--color-orange-700);
+  --color-warning-800: var(--color-orange-800);
+  --color-warning-900: var(--color-orange-900);
+  --color-warning-active: var(--color-orange-700);
+  --color-warning-background-light: var(--color-orange-200);
+  --color-warning-background-lighter: var(--color-orange-100);
+  --color-warning-background-lightest: var(--color-orange-50);
+  --color-warning-border: var(--color-orange-400);
+  --color-warning-border-light: var(--color-orange-300);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-hover: var(--color-orange-600);
+  --color-warning-text: var(--color-orange-500);
+  --color-warning-text-active: var(--color-orange-700);
+  --color-warning-text-hover: var(--color-orange-600);
+
+  /* 基于 yellow 颜色的变量 */
+  --color-yellow: var(--warning);
+  --color-yellow-active: var(--color-yellow-700);
+  --color-yellow-background-light: var(--color-yellow-200);
+  --color-yellow-background-lighter: var(--color-yellow-100);
+  --color-yellow-background-lightest: var(--color-yellow-50);
+  --color-yellow-border: var(--color-yellow-400);
+  --color-yellow-border-light: var(--color-yellow-300);
+  --color-yellow-foreground: var(--warning-foreground);
+  --color-yellow-hover: var(--color-yellow-600);
+  --color-yellow-text: var(--color-yellow-500);
+  --color-yellow-text-active: var(--color-yellow-700);
+  --color-yellow-text-hover: var(--color-yellow-600);
 }
