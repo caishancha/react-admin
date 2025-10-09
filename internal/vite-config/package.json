@@ -22,6 +22,7 @@
     }
   },
   "dependencies": {
+    "@csstools/postcss-oklab-function": "catalog:",
     "@jspm/generator": "catalog:",
     "archiver": "catalog:",
     "cheerio": "catalog:",

@@ -4,6 +4,7 @@ import type { DefineApplicationOptions } from '../typing.ts';
 
 import { NodePackageImporter } from 'sass';
 import { defineConfig, loadEnv, mergeConfig } from 'vite';
+import postcssOKLabFunction from '@csstools/postcss-oklab-function';
 
 import { defaultImportmapOptions, getDefaultPwaOptions } from '../options.ts';
 import { loadApplicationPlugins } from '../plugins/index.ts';
@@ -65,7 +66,12 @@ function defineApplicationConfig(userConfigPromise?: DefineApplicationOptions) {
         },
         target: 'es2015',
       },
-      css: createCssOptions(injectGlobalScss),
+      css: {
+        ...createCssOptions(injectGlobalScss),
+        postcss: {
+          plugins: [postcssOKLabFunction()],
+        },
+      },
       esbuild: {
         drop: isBuild ? ['console', 'debugger'] : [],
         legalComments: 'none',

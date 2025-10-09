@@ -9,7 +9,6 @@
     "experimentalDecorators": true,
     "allowImportingTsExtensions": true,
 
-    "baseUrl": ".",
     "module": "ESNext",
 
     "moduleResolution": "nodenext",
