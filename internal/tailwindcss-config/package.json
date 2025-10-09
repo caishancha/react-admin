@@ -11,6 +11,9 @@
   "files": [
     "dist"
   ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -20,11 +23,8 @@
       "development": "./src/index.ts",
       "default": "./dist/index.mjs"
     },
-    "./css": {
-      "types": "./src/css/index.ts",
-      "development": "./src/css/index.ts",
-      "import": "./dist/css/index.mjs",
-      "default": "./dist/css/index.mjs"
+    "./tailwind.css": {
+      "default": "./src/css/index.css"
     },
     "./*": "./*"
   },
