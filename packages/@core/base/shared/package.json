@@ -18,6 +18,11 @@
       "types": "./src/utils/index.ts",
       "development": "./src/utils/index.ts",
       "default": "./dist/utils/index.mjs"
+    },
+    "./cache": {
+      "types": "./src/cache/index.ts",
+      "development": "./src/cache/index.ts",
+      "default": "./dist/cache/index.mjs"
     }
   },
   "publishConfig": {
@@ -25,6 +30,10 @@
       "./utils": {
         "types": "./dist/utils/index.d.ts",
         "default": "./dist/utils/index.mjs"
+      },
+      "./cache": {
+        "types": "./dist/cache/index.d.ts",
+        "default": "./dist/cache/index.mjs"
       }
     }
   },
@@ -33,6 +42,7 @@
     "clsx": "catalog:",
     "dayjs": "catalog:",
     "defu": "catalog:",
+    "localforage": "catalog:",
     "lodash.clonedeep": "catalog:",
     "lodash.get": "catalog:",
     "lodash.isequal": "catalog:",

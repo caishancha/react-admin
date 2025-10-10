@@ -74,6 +74,7 @@ catalog:
   html-minifier-terser: ^7.2.0
   husky: 9.1.7
   lint-staged: ^16.2.0
+  localforage: ^1.10.0
   lodash.clonedeep: ^4.5.0
   lodash.get: ^4.4.2
   lodash.isequal: ^4.5.0
