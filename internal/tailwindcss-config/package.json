@@ -20,10 +20,8 @@
       "development": "./src/index.ts",
       "default": "./dist/index.mjs"
     },
-    "./css": {
-      "types": "./src/css/index.ts",
-      "development": "./src/css/index.ts",
-      "default": "./dist/css/index.mjs"
+    "./tailwind.css": {
+      "default": "./src/css/index.css"
     },
     "./*": "./*"
   },

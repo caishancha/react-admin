@@ -1,6 +1,5 @@
 import { createRoot } from 'react-dom/client';
 import App from './App';
-import '@react-admin/tailwindcss-config/css';
 import '@react-admin/styles';
 import '@react-admin/styles/antd.css';
 
