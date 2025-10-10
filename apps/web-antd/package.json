@@ -15,7 +15,6 @@
     "#/*": "./src/*"
   },
   "dependencies": {
-    "@react-admin-core/shadcn-ui": "workspace:*",
     "@react-admin/styles": "workspace:*",
     "@react-admin/types": "workspace:*",
     "antd": "catalog:",
