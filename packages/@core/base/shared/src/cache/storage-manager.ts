@@ -1,14 +1,4 @@
-import type { StorageType } from './types';
-
-interface StorageManagerOptions {
-  prefix?: string;
-  storageType?: StorageType;
-}
-
-interface StorageItem<T> {
-  expiry?: number;
-  value: T;
-}
+import type { StorageItem, StorageManagerOptions } from './types';
 
 class StorageManager {
   private prefix: string;
@@ -17,7 +7,7 @@ class StorageManager {
   constructor({
     prefix = '',
     storageType = 'localStorage',
-  }: StorageManagerOptions = {}) {
+  }: Omit<StorageManagerOptions, 'name'> = {}) {
     this.prefix = prefix;
     this.storage =
       storageType === 'localStorage'

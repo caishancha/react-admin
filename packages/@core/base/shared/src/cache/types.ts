@@ -1,8 +1,13 @@
 type StorageType = 'localStorage' | 'sessionStorage';
 
-interface StorageValue<T> {
-  data: T;
-  expiry: null | number;
+interface StorageItem<T> {
+  expiry?: number;
+  value: T;
+}
+interface StorageManagerOptions {
+  prefix?: string;
+  name?: string;
+  storageType?: StorageType;
 }
 
-export type { StorageType, StorageValue };
+export type { StorageItem, StorageManagerOptions };

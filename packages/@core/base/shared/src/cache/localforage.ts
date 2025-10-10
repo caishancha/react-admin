@@ -1,18 +1,19 @@
 import localforage from 'localforage';
-import type { StorageValue } from './types';
-
-interface ProxyStorageOptions {
-  namespace?: string;
-}
+import type { StorageItem, StorageManagerOptions } from './types';
 
 class ProxyStorage {
-  protected storage: LocalForage;
-  constructor({ namespace = '' }: ProxyStorageOptions = {}) {
+  private prefix: string;
+  private storage: LocalForage;
+  constructor({
+    name = '',
+    prefix = '',
+  }: Omit<StorageManagerOptions, 'storageType'> = {}) {
+    this.prefix = prefix;
     this.storage = localforage;
     this.storage.config({
       // 首选IndexedDB作为第一驱动，不支持IndexedDB会自动降级到localStorage（WebSQL被弃用，详情看https://developer.chrome.com/blog/deprecating-web-sql）
       driver: [this.storage.INDEXEDDB, this.storage.LOCALSTORAGE],
-      name: namespace,
+      name,
     });
   }
 
@@ -23,14 +24,15 @@ class ProxyStorage {
    * @param m 缓存时间（单位`分`，默认`0`分钟，永久缓存）
    */
   public async setItem<T>(k: string, v: T, m = 0): Promise<T> {
+    const fullKey = this.getFullKey(k);
     return new Promise((resolve, reject) => {
       this.storage
-        .setItem(k, {
-          data: v,
-          expires: m ? new Date().getTime() + m * 60 * 1000 : 0,
+        .setItem<StorageItem<T>>(fullKey, {
+          value: v,
+          expiry: m ? new Date().getTime() + m * 60 * 1000 : 0,
         })
         .then(value => {
-          resolve(value.data);
+          resolve(value.value);
         })
         .catch(err => {
           reject(err);
@@ -43,12 +45,13 @@ class ProxyStorage {
    * @param k 键名
    */
   public async getItem<T>(k: string): Promise<T | void> {
+    const fullKey = this.getFullKey(k);
     return new Promise((resolve, reject) => {
       this.storage
-        .getItem<StorageValue<T>>(k)
+        .getItem<StorageItem<T>>(fullKey)
         .then(value => {
           value && (value.expiry! > new Date().getTime() || value.expiry === 0)
-            ? resolve(value.data)
+            ? resolve(value.value)
             : resolve();
         })
         .catch(err => {
@@ -62,9 +65,10 @@ class ProxyStorage {
    * @param k 键名
    */
   public async removeItem(k: string) {
+    const fullKey = this.getFullKey(k);
     return new Promise<void>((resolve, reject) => {
       this.storage
-        .removeItem(k)
+        .removeItem(fullKey)
         .then(() => {
           resolve();
         })
@@ -104,6 +108,15 @@ class ProxyStorage {
           reject(err);
         });
     });
+  }
+
+  /**
+   * 获取完整的存储键
+   * @param key 原始键
+   * @returns 带前缀的完整键
+   */
+  private getFullKey(key: string): string {
+    return `${this.prefix}-${key}`;
   }
 }
 

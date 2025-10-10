@@ -51,7 +51,8 @@
     "vnode",
     "yxxx",
     "oklab",
-    "oklch"
+    "oklch",
+    "INDEXEDDB"
   ],
   "ignorePaths": [
     "**/node_modules/**",
