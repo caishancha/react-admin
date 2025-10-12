@@ -31,6 +31,9 @@ catalog:
   '@types/lodash.clonedeep': ^4.5.9
   '@types/lodash.get': ^4.4.9
   '@types/lodash.isequal': ^4.5.8
+  '@types/lodash.isfunction': ^3.0.9
+  '@types/lodash.isobject': ^3.0.9
+  '@types/lodash.isstring': ^4.0.9
   '@types/lodash.set': ^4.3.9
   '@types/node': ^24.5.2
   '@types/nprogress': ^0.2.3
@@ -78,6 +81,9 @@ catalog:
   lodash.clonedeep: ^4.5.0
   lodash.get: ^4.4.2
   lodash.isequal: ^4.5.0
+  lodash.isfunction: ^3.0.9
+  lodash.isobject: ^3.0.2
+  lodash.isstring: ^4.0.1
   lodash.set: ^4.3.2
   nitropack: ^2.12.6
   nprogress: ^0.2.0

@@ -23,6 +23,11 @@
       "types": "./src/cache/index.ts",
       "development": "./src/cache/index.ts",
       "default": "./dist/cache/index.mjs"
+    },
+    "./constants": {
+      "types": "./src/constants/index.ts",
+      "development": "./src/constants/index.ts",
+      "default": "./dist/constants/index.mjs"
     }
   },
   "publishConfig": {
@@ -34,6 +39,10 @@
       "./cache": {
         "types": "./dist/cache/index.d.ts",
         "default": "./dist/cache/index.mjs"
+      },
+      "./constants": {
+        "types": "./dist/constants/index.d.ts",
+        "default": "./dist/constants/index.mjs"
       }
     }
   },
@@ -46,6 +55,9 @@
     "lodash.clonedeep": "catalog:",
     "lodash.get": "catalog:",
     "lodash.isequal": "catalog:",
+    "lodash.isfunction": "catalog:",
+    "lodash.isobject": "catalog:",
+    "lodash.isstring": "catalog:",
     "lodash.set": "catalog:",
     "nprogress": "catalog:",
     "tailwind-merge": "catalog:",
@@ -55,6 +67,9 @@
     "@types/lodash.clonedeep": "catalog:",
     "@types/lodash.get": "catalog:",
     "@types/lodash.isequal": "catalog:",
+    "@types/lodash.isfunction": "catalog:",
+    "@types/lodash.isobject": "catalog:",
+    "@types/lodash.isstring": "catalog:",
     "@types/lodash.set": "catalog:",
     "@types/nprogress": "catalog:"
   }
