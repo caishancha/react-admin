@@ -29,5 +29,8 @@
         "default": "./dist/index.mjs"
       }
     }
+  },
+  "dependencies": {
+    "@tanstack/react-router": "catalog:"
   }
 }
