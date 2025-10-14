@@ -35,6 +35,7 @@
     "@radix-ui/react-slot": "catalog:",
     "@react-admin-core/shared": "workspace:*",
     "class-variance-authority": "catalog:",
+    "lucide-react": "catalog:",
     "react": "catalog:"
   },
   "devDependencies": {

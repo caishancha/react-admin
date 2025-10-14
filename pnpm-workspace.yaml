@@ -16,6 +16,7 @@ catalog:
   '@ctrl/tinycolor': ^4.2.0
   '@eslint/js': ^9.36.0
   '@iconify/json': ^2.2.388
+  '@iconify/react': ^6.0.2
   '@iconify/tailwind': ^1.2.0
   '@iconify/tailwind4': ^1.0.6
   '@jspm/generator': ^2.7.0
@@ -86,6 +87,7 @@ catalog:
   lodash.isobject: ^3.0.2
   lodash.isstring: ^4.0.1
   lodash.set: ^4.3.2
+  lucide-react: 0.545.0
   nitropack: ^2.12.6
   nprogress: ^0.2.0
   ora: ^9.0.0
