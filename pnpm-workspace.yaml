@@ -26,6 +26,7 @@ catalog:
   '@tailwindcss/postcss': ^4.1.14
   '@tailwindcss/typography': ^0.5.19
   '@tailwindcss/vite': ^4.1.14
+  '@tanstack/react-store': ^0.8.0
   '@types/archiver': ^6.0.3
   '@types/html-minifier-terser': ^7.0.2
   '@types/lodash.clonedeep': ^4.5.9
