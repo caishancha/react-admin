@@ -44,6 +44,8 @@
     "@react-admin/vite-config": "workspace:*",
     "@react-admin/vsh": "workspace:*",
     "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
     "@vitejs/plugin-react-swc": "catalog:",
     "cross-env": "catalog:",
     "cspell": "catalog:",

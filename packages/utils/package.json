@@ -1,0 +1,21 @@
+{
+  "name": "@react-admin/utils",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "author": "caishancha",
+  "license": "MIT",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@react-admin-core/shared": "workspace:*",
+    "@react-admin-core/typings": "workspace:*"
+  }
+}
