@@ -1,0 +1,41 @@
+{
+  "name": "@react-admin-core/composables",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm unbuild"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      }
+    }
+  },
+  "dependencies": {
+    "@react-admin-core/shared": "workspace:*",
+    "@reactuses/core": "catalog:",
+    "radix-ui": "catalog:",
+    "react": "catalog:",
+    "react-use": "catalog:",
+    "sortablejs": "catalog:"
+  },
+  "devDependencies": {
+    "@types/sortablejs": "catalog:"
+  }
+}
