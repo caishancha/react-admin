@@ -46,7 +46,7 @@ catalogs:
       specifier: 1.2.3
       version: 1.2.3
     '@reactuses/core':
-      specifier: ^6.1.0
+      specifier: 6.1.0
       version: 6.1.0
     '@stylistic/stylelint-plugin':
       specifier: ^4.0.0
@@ -828,6 +828,9 @@ importers:
       react:
         specifier: 'catalog:'
         version: 19.1.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.1.1(react@19.1.1)
       react-use:
         specifier: 'catalog:'
         version: 17.6.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -838,6 +841,24 @@ importers:
       '@types/sortablejs':
         specifier: 'catalog:'
         version: 1.15.8
+
+  packages/@core/preferences:
+    dependencies:
+      '@react-admin-core/composables':
+        specifier: workspace:*
+        version: link:../composables
+      '@react-admin-core/shared':
+        specifier: workspace:*
+        version: link:../base/shared
+      '@react-admin-core/typings':
+        specifier: workspace:*
+        version: link:../base/typings
+      '@reactuses/core':
+        specifier: 'catalog:'
+        version: 6.1.0(react@19.1.1)
+      react:
+        specifier: 'catalog:'
+        version: 19.1.1
 
   packages/@core/ui-kit/shadcn-ui:
     dependencies:

@@ -1,0 +1,31 @@
+{
+  "name": "@react-admin-core/preferences",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "#build": "pnpm unbuild"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./src/index.ts",
+      "#default": "./dist/index.mjs"
+    }
+  },
+  "dependencies": {
+    "@react-admin-core/composables": "workspace:*",
+    "@react-admin-core/shared": "workspace:*",
+    "@react-admin-core/typings": "workspace:*",
+    "@reactuses/core": "catalog:",
+    "react": "catalog:"
+  }
+}
