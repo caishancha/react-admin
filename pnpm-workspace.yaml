@@ -3,6 +3,7 @@ packages:
   - packages/@core/*
   - packages/@core/base/*
   - packages/@core/ui-kit/*
+  - packages/effects/*
   - internal/*
   - internal/lint-config/*
   - scripts/*
@@ -125,6 +126,7 @@ catalog:
   vite-plugin-pwa: ^1.0.3
   vite-plugin-react-click-to-component: ^4.0.0
   vitest: ^3.2.4
+  watermark-js-plus: ^1.6.3
   zustand: ^5.0.8
 
 catalogMode: strict

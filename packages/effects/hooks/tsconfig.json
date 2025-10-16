@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@react-admin/ts-config/web-pkg.json",
+  "compilerOptions": {
+    "types": ["@react-admin/types/global"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

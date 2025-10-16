@@ -11,7 +11,7 @@ import { TinyColor } from '@ctrl/tinycolor';
 function convertToHsl(color: string): string {
   const { a, h, l, s } = new TinyColor(color).toHsl();
   const hsl = `hsl(${Math.round(h)} ${Math.round(s * 100)}% ${Math.round(l * 100)}%)`;
-  return a < 1 ? `${hsl} ${a}` : hsl;
+  return a < 1 ? `hsl(${hsl} ${a})` : `hsl(${hsl})`;
 }
 
 /**
@@ -26,7 +26,7 @@ function convertToHsl(color: string): string {
 function convertToHslCssVar(color: string): string {
   const { a, h, l, s } = new TinyColor(color).toHsl();
   const hsl = `${Math.round(h)} ${Math.round(s * 100)}% ${Math.round(l * 100)}%`;
-  return a < 1 ? `${hsl} / ${a}` : hsl;
+  return a < 1 ? `hsl(${hsl} / ${a})` : `hsl(${hsl})`;
 }
 
 /**

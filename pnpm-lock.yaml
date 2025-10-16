@@ -330,6 +330,9 @@ catalogs:
     vitest:
       specifier: ^3.2.4
       version: 3.2.4
+    watermark-js-plus:
+      specifier: ^1.6.3
+      version: 1.6.3
     zustand:
       specifier: ^5.0.8
       version: 5.0.8
@@ -419,6 +422,9 @@ importers:
       '@react-admin/constants':
         specifier: workspace:*
         version: link:../../packages/constants
+      '@react-admin/hooks':
+        specifier: workspace:*
+        version: link:../../packages/effects/hooks
       '@react-admin/icons':
         specifier: workspace:*
         version: link:../../packages/icons
@@ -431,6 +437,9 @@ importers:
       '@react-admin/types':
         specifier: workspace:*
         version: link:../../packages/types
+      '@react-admin/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
       '@reactuses/core':
         specifier: 'catalog:'
         version: 6.1.0(react@19.1.1)
@@ -824,6 +833,30 @@ importers:
       '@react-admin-core/shared':
         specifier: workspace:*
         version: link:../@core/base/shared
+
+  packages/effects/hooks:
+    dependencies:
+      '@react-admin-core/composables':
+        specifier: workspace:*
+        version: link:../../@core/composables
+      '@react-admin/preferences':
+        specifier: workspace:*
+        version: link:../../preferences
+      '@react-admin/types':
+        specifier: workspace:*
+        version: link:../../types
+      '@react-admin/utils':
+        specifier: workspace:*
+        version: link:../../utils
+      '@reactuses/core':
+        specifier: 'catalog:'
+        version: 6.1.0(react@19.1.1)
+      react:
+        specifier: 'catalog:'
+        version: 19.1.1
+      watermark-js-plus:
+        specifier: 'catalog:'
+        version: 1.6.3
 
   packages/icons:
     dependencies:
@@ -8618,6 +8651,9 @@ packages:
 
   vscode-uri@3.1.0:
     resolution: {integrity: sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==}
+
+  watermark-js-plus@1.6.3:
+    resolution: {integrity: sha512-iCLOGf70KacIwjGF9MDViYxQcRiVwOH7l42qDHLeE2HeUsQD1EQuUC9cKRG/4SErTUmdqV3yf5WnKk2dRARHPQ==}
 
   web-streams-polyfill@3.3.3:
     resolution: {integrity: sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw==}
@@ -17353,6 +17389,8 @@ snapshots:
   vscode-languageserver-textdocument@1.0.12: {}
 
   vscode-uri@3.1.0: {}
+
+  watermark-js-plus@1.6.3: {}
 
   web-streams-polyfill@3.3.3: {}
 

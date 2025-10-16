@@ -16,8 +16,10 @@
   },
   "dependencies": {
     "@react-admin/constants": "workspace:*",
+    "@react-admin/hooks": "workspace:*",
     "@react-admin/icons": "workspace:*",
     "@react-admin/preferences": "workspace:*",
+    "@react-admin/utils": "workspace:*",
     "@react-admin/styles": "workspace:*",
     "@react-admin/types": "workspace:*",
     "@reactuses/core": "catalog:",

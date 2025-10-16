@@ -1,3 +1,8 @@
+import { initPreferences } from '@react-admin/preferences';
+import { unmountGlobalLoading } from '@react-admin/utils';
+
+import { overridesPreferences } from './preferences.ts';
+
 /**
  * 页面加载渲染进行应用初始化
  */
@@ -8,9 +13,17 @@ async function initApplication() {
   const appVersion = import.meta.env.VITE_APP_VERSION;
   const namespace = `${import.meta.env.VITE_APP_NAMESPACE}-${appVersion}-${env}`;
 
-  // 启动应用并挂载
+  initPreferences({
+    namespace,
+    overrides: overridesPreferences,
+  });
+
+  // 启动应用并挂载 React 应用主要逻辑和视图
   const { bootstrap } = await import('./bootstrap.tsx');
   await bootstrap(namespace);
+
+  // 移除并销毁loading
+  unmountGlobalLoading();
 }
 
 initApplication();
