@@ -1,6 +1,4 @@
-import isObject from 'lodash.isobject';
-import isString from 'lodash.isstring';
-import isFunction from 'lodash.isfunction';
+import { isObject, isString, isFunction } from 'lodash';
 
 /**
  * 检查传入的值是否为undefined。

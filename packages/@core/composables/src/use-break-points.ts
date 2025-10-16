@@ -1,13 +1,13 @@
-import { useMediaQuery } from '@reactuses/core';
+import { useMedia } from 'react-use';
 
 export function useBreakPoints() {
   // tailwindcss 默认断点配置
   const breakpoints = {
-    sm: useMediaQuery('(min-width: 40rem)'),
-    md: useMediaQuery('(min-width: 48rem)'),
-    lg: useMediaQuery('(min-width: 64rem)'),
-    xl: useMediaQuery('(min-width: 80rem)'),
-    '2xl': useMediaQuery('(min-width: 96rem)'),
+    sm: useMedia('(min-width: 40rem)'),
+    md: useMedia('(min-width: 48rem)'),
+    lg: useMedia('(min-width: 64rem)'),
+    xl: useMedia('(min-width: 80rem)'),
+    '2xl': useMedia('(min-width: 96rem)'),
   };
 
   const active = () =>

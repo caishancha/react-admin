@@ -22,7 +22,6 @@
     }
   },
   "dependencies": {
-    "@react-admin-core/composables": "workspace:*",
     "@react-admin-core/shared": "workspace:*",
     "@react-admin-core/typings": "workspace:*",
     "@reactuses/core": "catalog:",

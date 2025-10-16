@@ -32,13 +32,7 @@ catalog:
   '@tanstack/react-store': ^0.8.0
   '@types/archiver': ^6.0.3
   '@types/html-minifier-terser': ^7.0.2
-  '@types/lodash.clonedeep': ^4.5.9
-  '@types/lodash.get': ^4.4.9
-  '@types/lodash.isequal': ^4.5.8
-  '@types/lodash.isfunction': ^3.0.9
-  '@types/lodash.isobject': ^3.0.9
-  '@types/lodash.isstring': ^4.0.9
-  '@types/lodash.set': ^4.3.9
+  '@types/lodash': ^4.17.20
   '@types/node': ^24.5.2
   '@types/nprogress': ^0.2.3
   '@types/react': 19.1.15
@@ -82,14 +76,9 @@ catalog:
   html-minifier-terser: ^7.2.0
   husky: 9.1.7
   lint-staged: ^16.2.0
+  loadsh: ^0.0.4
   localforage: ^1.10.0
-  lodash.clonedeep: ^4.5.0
-  lodash.get: ^4.4.2
-  lodash.isequal: ^4.5.0
-  lodash.isfunction: ^3.0.9
-  lodash.isobject: ^3.0.2
-  lodash.isstring: ^4.0.1
-  lodash.set: ^4.3.2
+  lodash: ^4.17.21
   lucide-react: 0.545.0
   nitropack: ^2.12.6
   nprogress: ^0.2.0
