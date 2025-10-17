@@ -4,6 +4,7 @@ import type { InitialOptions, Preferences } from './types';
 
 import { StorageManager } from '@react-admin-core/shared/cache';
 import { debounce, isMacOs, merge } from '@react-admin-core/shared/utils';
+import { DEFAULT_TAILWINDCSS_MD } from '@react-admin-core/shared/constants';
 
 import { defaultPreferences } from './config';
 import { updateCSSVariables } from './update-css-variables';
@@ -12,9 +13,12 @@ const STORAGE_KEY = 'preferences';
 const STORAGE_KEY_LOCALE = `${STORAGE_KEY}-locale`;
 const STORAGE_KEY_THEME = `${STORAGE_KEY}-theme`;
 
+const rootFontSize = parseFloat(
+  getComputedStyle(document.documentElement).fontSize,
+);
+
 class PreferenceManager {
   private cache: null | StorageManager = null;
-  // private flattenedState: Flatten<Preferences>;
   private initialPreferences: Preferences = defaultPreferences;
   private isInitialized: boolean = false;
   private savePreferences: (preference: Preferences) => void;
@@ -171,25 +175,29 @@ class PreferenceManager {
       return;
     }
 
+    // 检测是否为移动端
+    const checkIsMobile = () => {
+      return window.innerWidth < DEFAULT_TAILWINDCSS_MD * rootFontSize;
+    };
+
+    const initialMobile = () => {
+      const initialIsMobile = checkIsMobile();
+      if (initialIsMobile !== this.state.app.isMobile) {
+        this.updatePreferences({
+          app: {
+            isMobile: initialIsMobile,
+          },
+        });
+      }
+    };
+    initialMobile();
     // 监听断点，判断是否移动端
-    // const breakpoints = useBreakpoints(breakpointsTailwind);
-    // const isMobile = breakpoints.smaller('md');
-    // watch(
-    //   () => isMobile.value,
-    //   val => {
-    //     this.updatePreferences({
-    //       app: { isMobile: val },
-    //     });
-    //   },
-    //   { immediate: true },
-    // );
+    window.addEventListener('resize', initialMobile);
 
     // 监听系统主题偏好设置变化
     window
       .matchMedia('(prefers-color-scheme: dark)')
       .addEventListener('change', ({ matches: isDark }) => {
-        console.log(isDark, 'isDark', this.state.theme.mode);
-
         // 如果偏好设置中主题模式为auto，则跟随系统更新
         if (this.state.theme.mode === 'auto') {
           this.updatePreferences({
