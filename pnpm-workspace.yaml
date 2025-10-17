@@ -23,6 +23,7 @@ catalog:
   '@jspm/generator': ^2.7.0
   '@manypkg/get-packages': 3.1.0
   '@pnpm/workspace.read-manifest': ^1000.2.4
+  '@radix-ui/react-accordion': ^1.2.12
   '@radix-ui/react-slot': 1.2.3
   '@reactuses/core': 6.1.0
   '@stylistic/stylelint-plugin': ^4.0.0

@@ -32,6 +32,7 @@
     }
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "catalog:",
     "@radix-ui/react-slot": "catalog:",
     "@react-admin-core/shared": "workspace:*",
     "class-variance-authority": "catalog:",
