@@ -5,3 +5,4 @@ export {
   ButtonGroupSeparator,
   ButtonGroupText,
 } from './button-group';
+export type * from './types';

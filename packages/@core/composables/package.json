@@ -30,7 +30,6 @@
   "dependencies": {
     "@react-admin-core/shared": "workspace:*",
     "@reactuses/core": "catalog:",
-    "radix-ui": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
     "react-use": "catalog:",
