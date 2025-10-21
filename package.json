@@ -26,7 +26,6 @@
     "lint": "pnpm run lint:fix",
     "lint:fix": "vsh lint --format",
     "lint:check": "vsh lint",
-    "postinstall": "pnpm -r run stub --if-present",
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky || true",
     "publint": "vsh publint",
