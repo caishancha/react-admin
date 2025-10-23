@@ -1,38 +1,55 @@
-// import { useMemo } from 'react';
-// import type { BacktopProps } from './backtop';
-// import { CSSTransition } from 'react-transition-group';
+import { useMemo, useRef } from 'react';
+import type { BacktopProps } from './backtop';
+import { CSSTransition } from 'react-transition-group';
 
-// import { useBackTop } from './use-backtop';
+import { ArrowUpToLine } from '@react-admin-core/icons';
 
-// interface Props extends BacktopProps {}
+import { useBackTop } from './use-backtop';
+import { SCButton } from '../button';
 
-// export const SCBackTop = (props: Props) => {
-//   const {
-//     bottom = 20,
-//     right = 24,
-//     target = '',
-//     visibilityHeight = 200,
-//   } = props || {};
+interface Props extends BacktopProps {}
 
-//   const backTopStyle = useMemo(
-//     () => ({
-//       bottom: `${bottom}px`,
-//       right: `${right}px`,
-//     }),
-//     [bottom, right],
-//   );
+export const SCBackTop = ({
+  bottom = 20,
+  right = 24,
+  target = '',
+  visibilityHeight = 200,
+  ...props
+}: Props) => {
+  const backTopRef = useRef<HTMLButtonElement>(null);
 
-//   const { handleClick, visible } = useBackTop({
-//     target,
-//     visibilityHeight,
-//   });
+  const backTopStyle = useMemo(
+    () => ({
+      bottom: `${bottom}px`,
+      right: `${right}px`,
+    }),
+    [bottom, right],
+  );
 
-//   return (
-//     <CSSTransition
-//       in={visible}
-//       timeout={200}
-//       classNames="fade-down"
-//       unmountOnExit
-//     ></CSSTransition>
-//   );
-// };
+  const { handleClick, visible } = useBackTop({
+    target,
+    visibilityHeight,
+    ...props,
+  });
+
+  return (
+    <CSSTransition
+      nodeRef={backTopRef}
+      in={visible}
+      timeout={300}
+      classNames="fade-down"
+      unmountOnExit
+    >
+      <SCButton
+        ref={backTopRef}
+        style={backTopStyle}
+        className="dark:bg-accent dark:hover:bg-heavy bg-background hover:bg-heavy shadow-float z-popup fixed bottom-10 size-10 rounded-full duration-500"
+        variant="outline"
+        size="icon"
+        onClick={handleClick}
+      >
+        <ArrowUpToLine className="size-4" />
+      </SCButton>
+    </CSSTransition>
+  );
+};

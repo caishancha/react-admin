@@ -539,6 +539,9 @@ importers:
 
   apps/web-antd:
     dependencies:
+      '@react-admin-core/shadcn-ui':
+        specifier: workspace:*
+        version: link:../../packages/@core/ui-kit/shadcn-ui
       '@react-admin/constants':
         specifier: workspace:*
         version: link:../../packages/constants
@@ -836,6 +839,9 @@ importers:
       react:
         specifier: 'catalog:'
         version: 19.1.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.1.1(react@19.1.1)
 
   packages/@core/base/shared:
     dependencies:
@@ -922,6 +928,9 @@ importers:
       react:
         specifier: 'catalog:'
         version: 19.1.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.1.1(react@19.1.1)
 
   packages/@core/ui-kit/shadcn-ui:
     dependencies:
@@ -1009,6 +1018,9 @@ importers:
       '@react-admin-core/composables':
         specifier: workspace:*
         version: link:../../composables
+      '@react-admin-core/icons':
+        specifier: workspace:*
+        version: link:../../base/icons
       '@react-admin-core/shared':
         specifier: workspace:*
         version: link:../../base/shared
@@ -1048,6 +1060,9 @@ importers:
       react-day-picker:
         specifier: 'catalog:'
         version: 9.11.1(react@19.1.1)
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.1.1(react@19.1.1)
       react-hook-form:
         specifier: 'catalog:'
         version: 7.65.0(react@19.1.1)
@@ -1093,6 +1108,9 @@ importers:
       react:
         specifier: 'catalog:'
         version: 19.1.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.1.1(react@19.1.1)
       watermark-js-plus:
         specifier: 'catalog:'
         version: 1.6.3

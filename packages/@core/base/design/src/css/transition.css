@@ -93,20 +93,27 @@
   transform: translate(30px);
 }
 
-.fade-down-enter-active,
-.fade-down-leave-active {
+.fade-down-enter {
+  opacity: 0;
+  transform: translateY(-10%);
+}
+
+.fade-down-enter-active {
+  opacity: 1;
   transition:
     opacity 0.25s,
     transform 0.3s;
 }
 
-.fade-down-enter-from {
+.fade-down-exit-active {
   opacity: 0;
-  transform: translateY(-10%);
+  transition:
+    opacity 0.25s,
+    transform 0.3s;
 }
 
-.fade-down-leave-to {
-  opacity: 0;
+.fade-down-exit {
+  opacity: 1;
   transform: translateY(10%);
 }
 

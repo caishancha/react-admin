@@ -19,6 +19,7 @@
     "@react-admin/utils": "workspace:*",
     "@reactuses/core": "catalog:",
     "react": "catalog:",
+    "react-dom": "catalog:",
     "watermark-js-plus": "catalog:"
   }
 }

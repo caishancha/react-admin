@@ -33,6 +33,7 @@
   "dependencies": {
     "@iconify/react": "catalog:",
     "lucide-react": "catalog:",
-    "react": "catalog:"
+    "react": "catalog:",
+    "react-dom": "catalog:"
   }
 }

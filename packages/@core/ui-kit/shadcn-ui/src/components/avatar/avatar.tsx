@@ -7,11 +7,11 @@ import { cn } from '@react-admin-core/shared/utils';
 
 interface Props {
   src: string;
-  alt: string;
-  class: ClassType;
-  dot: boolean;
-  dotClass: ClassType;
-  fit: 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
+  alt?: string;
+  className?: ClassType;
+  dot?: boolean;
+  dotClass?: ClassType;
+  fit?: 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
   size: number;
 }
 
@@ -47,9 +47,12 @@ export const SCAvatar = (props: Props) => {
   return (
     <div
       style={rootStyle}
-      className={cn('relative flex flex-shrink-0 items-center', props.class)}
+      className={cn(
+        'relative flex flex-shrink-0 items-center',
+        props.className,
+      )}
     >
-      <Avatar className={cn('size-full', props.class)}>
+      <Avatar className={cn('size-full', props.className)}>
         <AvatarImage alt={alt} src={props.src} style={imageStyle} />
         <AvatarFallback>{text}</AvatarFallback>
       </Avatar>

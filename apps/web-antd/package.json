@@ -22,6 +22,7 @@
     "@react-admin/utils": "workspace:*",
     "@react-admin/styles": "workspace:*",
     "@react-admin/types": "workspace:*",
+    "@react-admin-core/shadcn-ui": "workspace:*",
     "@reactuses/core": "catalog:",
     "antd": "catalog:",
     "react": "catalog:",

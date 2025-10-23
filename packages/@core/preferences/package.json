@@ -25,6 +25,7 @@
     "@react-admin-core/shared": "workspace:*",
     "@react-admin-core/typings": "workspace:*",
     "@reactuses/core": "catalog:",
-    "react": "catalog:"
+    "react": "catalog:",
+    "react-dom": "catalog:"
   }
 }
