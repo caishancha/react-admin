@@ -1,0 +1,1 @@
+export { SCIcon } from './icon';

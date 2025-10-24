@@ -16,7 +16,7 @@ export const SCBackTop = ({
   visibilityHeight = 200,
   ...props
 }: Props) => {
-  const backTopRef = useRef<HTMLButtonElement>(null);
+  const nodeRef = useRef<HTMLButtonElement>(null);
 
   const backTopStyle = useMemo(
     () => ({
@@ -34,14 +34,14 @@ export const SCBackTop = ({
 
   return (
     <CSSTransition
-      nodeRef={backTopRef}
+      nodeRef={nodeRef}
       in={visible}
       timeout={300}
       classNames="fade-down"
       unmountOnExit
     >
       <SCButton
-        ref={backTopRef}
+        ref={nodeRef}
         style={backTopStyle}
         className="dark:bg-accent dark:hover:bg-heavy bg-background hover:bg-heavy shadow-float z-popup fixed bottom-10 size-10 rounded-full duration-500"
         variant="outline"
