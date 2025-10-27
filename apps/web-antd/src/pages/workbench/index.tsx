@@ -3,6 +3,8 @@ import {
   SCButton,
   SCBackTop,
   SCBreadcrumb,
+  SCCheckbox,
+  SCContextMenu,
 } from '@react-admin-core/shadcn-ui';
 
 export const Workbench = () => {
@@ -34,11 +36,6 @@ export const Workbench = () => {
         },
       ],
     },
-    {
-      icon: 'lucide:area-chart',
-      path: '/analytics2',
-      title: '分析页2',
-    },
   ];
 
   return (
@@ -49,6 +46,9 @@ export const Workbench = () => {
       <SCButton>我是按钮</SCButton>
       <SCBackTop />
       <SCBreadcrumb breadcrumbs={breadcrumbs} showIcon />
+      <SCCheckbox>我是复选框</SCCheckbox>
+      <div className="mt-2"></div>
+      <SCContextMenu menus={() => []} />
     </div>
   );
 };

@@ -19,19 +19,22 @@
   animation-name: slide-right;
 }
 
-.breadcrumb-transition-enter-active {
-  transition:
-    transform 0.4s cubic-bezier(0.76, 0, 0.24, 1),
-    opacity 0.4s cubic-bezier(0.76, 0, 0.24, 1);
-}
-
-.breadcrumb-transition-leave-active {
-  display: none;
-}
-
-.breadcrumb-transition-enter-from {
+.breadcrumb-transition-enter {
   opacity: 0;
-  transform: translateX(30px) skewX(-30deg);
+}
+
+.breadcrumb-transition-enter-active {
+  opacity: 1;
+  transition: opacity 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.breadcrumb-transition-exit {
+  opacity: 1;
+}
+
+.breadcrumb-transition-exit-active {
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 @keyframes slide-down {
