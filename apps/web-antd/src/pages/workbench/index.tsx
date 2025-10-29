@@ -8,7 +8,10 @@ import {
   ScDropdownMenu,
   ScFullScreen,
   ScHoverCard,
+  ScInputPassword,
+  Label,
 } from '@react-admin-core/shadcn-ui';
+import { useState } from 'react';
 
 export const Workbench = () => {
   const breadcrumbs = [
@@ -41,6 +44,8 @@ export const Workbench = () => {
     },
   ];
 
+  const [password, setPassword] = useState('');
+
   return (
     <div className="w-full">
       <div className="size-20">
@@ -58,9 +63,19 @@ export const Workbench = () => {
       <ScFullScreen />
       <ScHoverCard
         openDelay={100}
-        trigger={<ScButton>我是按钮</ScButton>}
+        closeDelay={100}
         content={<div>我是内容</div>}
-      />
+      >
+        <ScButton variant="link">我是按钮</ScButton>
+      </ScHoverCard>
+      <div>
+        <Label>密码:</Label>
+        <ScInputPassword
+          passwordStrength
+          value={password}
+          onChange={setPassword}
+        />
+      </div>
     </div>
   );
 };

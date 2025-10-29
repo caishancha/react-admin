@@ -10,7 +10,7 @@ import { cn } from '@react-admin-core/shared/utils';
 interface Props extends HoverCardProps {
   className?: ClassType;
   contentClass?: ClassType;
-  trigger: React.ReactNode;
+  trigger?: React.ReactNode;
   content: React.ReactNode;
   contentProps?: HoverCardContentProps;
 }
@@ -23,15 +23,16 @@ export const ScHoverCard = ({
   content,
   ...props
 }: Props) => {
-  console.log(props.children);
-
   return (
     <HoverCard {...props}>
-      <HoverCardTrigger asChild className="h-full">
-        <div className={cn('h-full cursor-pointer', className)}>{trigger}</div>
+      <HoverCardTrigger asChild>
+        <div className={cn('h-full cursor-pointer', className)}>
+          {trigger ?? props.children}
+        </div>
       </HoverCardTrigger>
       <HoverCardContent
         {...contentProps}
+        align="start"
         className={cn('side-content z-popup', contentClass)}
       >
         {content}

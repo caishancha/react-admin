@@ -7,3 +7,4 @@ export * from './context-menu';
 export * from './dropdown-menu';
 export * from './full-screen';
 export * from './hover-card';
+export * from './input-password';
