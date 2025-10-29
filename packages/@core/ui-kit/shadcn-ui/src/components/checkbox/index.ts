@@ -1,1 +1,1 @@
-export { SCCheckbox } from './checkbox';
+export { ScCheckbox } from './checkbox';

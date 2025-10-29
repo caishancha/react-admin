@@ -30,6 +30,7 @@
     "@iconify/tailwind4": "catalog:",
     "@manypkg/get-packages": "catalog:",
     "@tailwindcss/vite": "catalog:",
-    "tailwindcss": "catalog:"
+    "tailwindcss": "catalog:",
+    "tailwindcss-animate": "catalog:"
   }
 }

@@ -35,16 +35,8 @@ interface IContextMenuItem {
    */
   shortcut?: string;
   /**
-   * @zh_CN 子菜单
-   */
-  subMenus?: IContextMenuItem[];
-  /**
    * @zh_CN 标题
    */
   text: string;
-  /**
-   * @zh_CN 类型
-   */
-  type: 'checkbox' | 'radio';
 }
 export type { IContextMenuItem };

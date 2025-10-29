@@ -6,7 +6,7 @@ interface Props {
   icon?: ComponentType | string;
 }
 
-export const SCIcon = ({
+export const ScIcon = ({
   icon,
   ...props
 }: Omit<

@@ -1,10 +1,13 @@
 import {
-  SCAvatar,
-  SCButton,
-  SCBackTop,
-  SCBreadcrumb,
-  SCCheckbox,
-  SCContextMenu,
+  ScAvatar,
+  ScButton,
+  ScBackTop,
+  ScBreadcrumb,
+  ScCheckbox,
+  ScContextMenu,
+  ScDropdownMenu,
+  ScFullScreen,
+  ScHoverCard,
 } from '@react-admin-core/shadcn-ui';
 
 export const Workbench = () => {
@@ -41,14 +44,23 @@ export const Workbench = () => {
   return (
     <div className="w-full">
       <div className="size-20">
-        <SCAvatar size={80} src="https://picsum.photos/200/300" dot />
+        <ScAvatar size={80} src="https://picsum.photos/200/300" dot />
       </div>
-      <SCButton>我是按钮</SCButton>
-      <SCBackTop />
-      <SCBreadcrumb breadcrumbs={breadcrumbs} showIcon />
-      <SCCheckbox>我是复选框</SCCheckbox>
+      <ScButton>我是按钮</ScButton>
+      <ScBackTop />
+      <ScBreadcrumb breadcrumbs={breadcrumbs} showIcon />
+      <ScCheckbox>我是复选框</ScCheckbox>
       <div className="mt-2"></div>
-      <SCContextMenu menus={() => []} />
+      <ScContextMenu menus={() => []}>
+        {/* <ScButton>我是按钮</ScButton> */}
+      </ScContextMenu>
+      <ScDropdownMenu menus={[]}></ScDropdownMenu>
+      <ScFullScreen />
+      <ScHoverCard
+        openDelay={100}
+        trigger={<ScButton>我是按钮</ScButton>}
+        content={<div>我是内容</div>}
+      />
     </div>
   );
 };

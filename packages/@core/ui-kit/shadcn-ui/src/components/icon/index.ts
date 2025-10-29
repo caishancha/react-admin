@@ -1,1 +1,1 @@
-export { SCIcon } from './icon';
+export { ScIcon } from './icon';

@@ -3,7 +3,7 @@ import { useId } from 'react';
 
 import { Checkbox, Label } from '../../ui';
 
-export const SCCheckbox = (
+export const ScCheckbox = (
   props: CheckboxProps & { indeterminate?: boolean },
 ) => {
   const id = useId();

@@ -1,1 +1,1 @@
-export { SCBreadcrumb } from './breadcrumb';
+export { ScBreadcrumb } from './breadcrumb';

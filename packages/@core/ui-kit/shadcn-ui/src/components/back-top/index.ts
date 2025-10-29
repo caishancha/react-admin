@@ -1,1 +1,1 @@
-export { SCBackTop } from './back-top.tsx';
+export { ScBackTop } from './back-top.tsx';

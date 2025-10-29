@@ -1,1 +1,1 @@
-export { SCAvatar } from './avatar';
+export { ScAvatar } from './avatar';

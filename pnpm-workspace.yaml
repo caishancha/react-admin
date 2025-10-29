@@ -150,6 +150,7 @@ catalog:
   stylelint-scss: ^6.12.1
   tailwind-merge: ^3.3.1
   tailwindcss: 4.1.13
+  tailwindcss-animate: ^1.0.7
   theme-colors: ^0.1.0
   tsdown: ^0.15.6
   turbo: 2.5.6

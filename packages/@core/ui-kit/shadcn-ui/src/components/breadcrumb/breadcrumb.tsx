@@ -15,12 +15,12 @@ import { ChevronDown } from '@react-admin-core/icons';
 
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import type { BreadcrumbProps, IBreadcrumb } from './types';
-import { SCIcon } from '../icon';
+import { ScIcon } from '../icon';
 import { createRef, useMemo, type RefObject } from 'react';
 
 interface Props extends BreadcrumbProps {}
 
-export const SCBreadcrumb = ({
+export const ScBreadcrumb = ({
   showIcon = false,
   onSelect,
   ...props
@@ -56,7 +56,7 @@ export const SCBreadcrumb = ({
                     <DropdownMenu>
                       <DropdownMenuTrigger className="flex items-center gap-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-3.5">
                         {showIcon && (
-                          <SCIcon icon={item.icon} className="size-4" />
+                          <ScIcon icon={item.icon} className="size-4" />
                         )}
                         {item.title}
                         <ChevronDown className="size-4" />
@@ -68,7 +68,7 @@ export const SCBreadcrumb = ({
                             onClick={() => handleClick(menuItem.path)}
                           >
                             {showIcon && (
-                              <SCIcon
+                              <ScIcon
                                 icon={menuItem.icon}
                                 className="size-4 mr-1"
                               />
@@ -85,7 +85,7 @@ export const SCBreadcrumb = ({
                         onClick={() => handleClick(item.path)}
                       >
                         {showIcon && (
-                          <SCIcon icon={item.icon} className="size-4 mr-1" />
+                          <ScIcon icon={item.icon} className="size-4 mr-1" />
                         )}
                         {item.title}
                       </div>
@@ -94,7 +94,7 @@ export const SCBreadcrumb = ({
                     <BreadcrumbPage>
                       <div className="flex-center">
                         {showIcon && (
-                          <SCIcon icon={item.icon} className="mr-1 size-4" />
+                          <ScIcon icon={item.icon} className="mr-1 size-4" />
                         )}
                         {item.title}
                       </div>

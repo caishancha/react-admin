@@ -5,11 +5,11 @@ import { CSSTransition } from 'react-transition-group';
 import { ArrowUpToLine } from '@react-admin-core/icons';
 
 import { useBackTop } from './use-backtop';
-import { SCButton } from '../button';
+import { ScButton } from '../button';
 
 interface Props extends BacktopProps {}
 
-export const SCBackTop = ({
+export const ScBackTop = ({
   bottom = 20,
   right = 24,
   target = '',
@@ -40,7 +40,7 @@ export const SCBackTop = ({
       classNames="fade-down"
       unmountOnExit
     >
-      <SCButton
+      <ScButton
         ref={nodeRef}
         style={backTopStyle}
         className="dark:bg-accent dark:hover:bg-heavy bg-background hover:bg-heavy shadow-float z-popup fixed bottom-10 size-10 rounded-full duration-500"
@@ -49,7 +49,7 @@ export const SCBackTop = ({
         onClick={handleClick}
       >
         <ArrowUpToLine className="size-4" />
-      </SCButton>
+      </ScButton>
     </CSSTransition>
   );
 };

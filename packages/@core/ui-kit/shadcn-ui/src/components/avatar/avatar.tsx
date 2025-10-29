@@ -15,7 +15,7 @@ interface Props {
   size: number;
 }
 
-export const SCAvatar = (props: Props) => {
+export const ScAvatar = (props: Props) => {
   const {
     alt = 'avatar',
     dot = false,

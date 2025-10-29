@@ -5,7 +5,7 @@ import type { SCButtonProps } from './button';
 
 interface Props extends SCButtonProps {}
 
-export function SCButton({
+export function ScButton({
   disabled,
   loading,
   children,

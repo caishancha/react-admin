@@ -1,1 +1,1 @@
-export { SCButton } from './button.tsx';
+export { ScButton } from './button.tsx';
