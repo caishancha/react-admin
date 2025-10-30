@@ -1,4 +1,5 @@
 import {
+  Label,
   ScAvatar,
   ScButton,
   ScBackTop,
@@ -9,7 +10,8 @@ import {
   ScFullScreen,
   ScHoverCard,
   ScInputPassword,
-  Label,
+  ScLogo,
+  ScPopover,
 } from '@react-admin-core/shadcn-ui';
 import { useState } from 'react';
 
@@ -64,6 +66,7 @@ export const Workbench = () => {
       <ScHoverCard
         openDelay={100}
         closeDelay={100}
+        contentProps={{ align: 'start' }}
         content={<div>我是内容</div>}
       >
         <ScButton variant="link">我是按钮</ScButton>
@@ -76,6 +79,11 @@ export const Workbench = () => {
           onChange={setPassword}
         />
       </div>
+      <ScLogo src="https://picsum.photos/200/300" text="React Admin" />
+      <ScPopover
+        trigger={<ScButton>我是按钮</ScButton>}
+        content={<div>我是内容22</div>}
+      />
     </div>
   );
 };

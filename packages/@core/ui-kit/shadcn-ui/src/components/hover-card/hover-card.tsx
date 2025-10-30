@@ -32,7 +32,6 @@ export const ScHoverCard = ({
       </HoverCardTrigger>
       <HoverCardContent
         {...contentProps}
-        align="start"
         className={cn('side-content z-popup', contentClass)}
       >
         {content}
