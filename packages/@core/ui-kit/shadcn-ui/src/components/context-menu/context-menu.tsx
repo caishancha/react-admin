@@ -1,3 +1,4 @@
+import React, { useMemo } from 'react';
 import type {
   ContextMenuProps,
   ContextMenuContentProps,
@@ -16,7 +17,6 @@ import {
 
 import { ScIcon } from '../icon';
 import { cn } from '@react-admin-core/shared/utils';
-import { useMemo } from 'react';
 
 export const ScContextMenu = ({
   className,
@@ -53,7 +53,7 @@ export const ScContextMenu = ({
         className={cn('side-content z-popup', contentClass)}
       >
         {menusView?.map(menu => (
-          <div key={menu.key}>
+          <React.Fragment key={menu.key}>
             <ContextMenuItem
               className={cn('', itemClass)}
               disabled={menu.disabled}
@@ -69,7 +69,7 @@ export const ScContextMenu = ({
               )}
             </ContextMenuItem>
             {menu.separator && <ContextMenuSeparator />}
-          </div>
+          </React.Fragment>
         ))}
       </ContextMenuContent>
     </ContextMenu>

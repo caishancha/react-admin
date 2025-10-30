@@ -10,3 +10,4 @@ export * from './hover-card';
 export * from './input-password';
 export * from './logo';
 export * from './popover';
+export * from './scrollbar';

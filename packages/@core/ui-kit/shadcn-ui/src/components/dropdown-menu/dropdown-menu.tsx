@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -32,7 +33,7 @@ export function ScDropdownMenu({
       <DropdownMenuTrigger asChild>{props.children}</DropdownMenuTrigger>
       <DropdownMenuContent align="start">
         {menus.map((item, index) => (
-          <div key={index}>
+          <React.Fragment key={index}>
             {item.label && <DropdownMenuLabel>{item.label}</DropdownMenuLabel>}
             <DropdownMenuGroup>
               {item.data.map(menu => (
@@ -50,7 +51,7 @@ export function ScDropdownMenu({
               ))}
             </DropdownMenuGroup>
             {item.separator && <DropdownMenuSeparator />}
-          </div>
+          </React.Fragment>
         ))}
       </DropdownMenuContent>
     </DropdownMenu>
