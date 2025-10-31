@@ -22,15 +22,15 @@ export const ScPopover = ({
 }: Props) => {
   return (
     <Popover {...props}>
-      <PopoverTrigger className={cn(triggerClass)}>
+      <PopoverTrigger asChild className={cn(triggerClass)}>
         {props.trigger}
-        <PopoverContent
-          className={cn('side-content z-popup', contentClass)}
-          {...contentProps}
-        >
-          {props.content ?? props.children}
-        </PopoverContent>
       </PopoverTrigger>
+      <PopoverContent
+        className={cn('side-content z-popup', contentClass)}
+        {...contentProps}
+      >
+        {props.content ?? props.children}
+      </PopoverContent>
     </Popover>
   );
 };

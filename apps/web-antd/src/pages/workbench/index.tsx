@@ -1,5 +1,4 @@
 import {
-  Label,
   ScAvatar,
   ScButton,
   ScBackTop,
@@ -12,6 +11,7 @@ import {
   ScInputPassword,
   ScLogo,
   ScPopover,
+  ScScrollbar,
 } from '@react-admin-core/shadcn-ui';
 import { useState } from 'react';
 
@@ -72,7 +72,6 @@ export const Workbench = () => {
         <ScButton variant="link">我是按钮</ScButton>
       </ScHoverCard>
       <div>
-        <Label>密码:</Label>
         <ScInputPassword
           passwordStrength
           value={password}
@@ -84,6 +83,9 @@ export const Workbench = () => {
         trigger={<ScButton>我是按钮</ScButton>}
         content={<div>我是内容22</div>}
       />
+      <ScScrollbar className="w-[300px] h-[300px]" shadow shadowLeft>
+        <div className="h-[400px] w-[300px] bg-[#f0f0f0]">我是滚动条</div>
+      </ScScrollbar>
     </div>
   );
 };

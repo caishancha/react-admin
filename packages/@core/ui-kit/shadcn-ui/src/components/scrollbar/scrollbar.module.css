@@ -1,4 +1,6 @@
 .sc-scrollbar {
+  --scroll-shadow: var(--sidebar);
+
   &:not(.both-shadow).left-shadow {
     mask-image: linear-gradient(90deg, transparent, #000 16px);
   }
