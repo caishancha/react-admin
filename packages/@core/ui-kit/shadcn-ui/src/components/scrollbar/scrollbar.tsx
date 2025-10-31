@@ -101,17 +101,25 @@
 //       {showShadowTop && (
 //         <div
 //           className={cn(
-//             'scrollbar-top-shadow pointer-events-none absolute top-0 z-10 h-12 w-full opacity-0 transition-opacity duration-300 ease-in-out will-change-[opacity]',
+//             'pointer-events-none absolute top-0 z-10 h-12 w-full opacity-0 transition-opacity duration-300 ease-in-out will-change-[opacity]',
+//             `${!isAtTop ? 'opacity-100' : ''}`,
+//             `${shadowBorder && !isAtTop ? 'border-border border-t' : ''}`,
 //           )}
 //         ></div>
 //       )}
 //       {props.children}
 //       {showShadowBottom && (
-//         <div className="scrollbar-bottom-shadow pointer-events-none absolute bottom-0 z-10 h-12 w-full opacity-0 transition-opacity duration-300 ease-in-out will-change-[opacity]"></div>
+//         <div
+//           className={cn(
+//             'pointer-events-none absolute bottom-0 z-10 h-12 w-full opacity-0 transition-opacity duration-300 ease-in-out will-change-[opacity]',
+//             `${!isAtTop && !isAtBottom ? 'opacity-100' : ''}`,
+//             `${shadowBorder && !isAtTop && !isAtBottom ? 'border-border border-b' : ''}`,
+//           )}
+//         ></div>
 //       )}
 //       {horizontal && (
 //         <ScrollBar
-//           className={cn('scrollbar-horizontal', props.scrollBarClass)}
+//           className={cn(props.scrollBarClass)}
 //           orientation="horizontal"
 //         />
 //       )}
@@ -119,4 +127,4 @@
 //   );
 // };
 
-export const ScScrollbar = () => {};
+export const ScScrollbar = {};
