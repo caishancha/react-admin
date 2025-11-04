@@ -12,6 +12,7 @@ import {
   ScLogo,
   ScPopover,
   ScScrollbar,
+  ScLoading,
 } from '@react-admin-core/shadcn-ui';
 import { useState } from 'react';
 
@@ -47,6 +48,13 @@ export const Workbench = () => {
   ];
 
   const [password, setPassword] = useState('');
+
+  const [loading, setLoading] = useState(false);
+
+  setLoading(true);
+  setTimeout(() => {
+    setLoading(false);
+  }, 2000);
 
   return (
     <div className="w-full">
@@ -86,6 +94,9 @@ export const Workbench = () => {
       <ScScrollbar className="w-[300px] h-[300px]" shadow shadowLeft>
         <div className="h-[400px] w-[300px] bg-[#f0f0f0]">我是滚动条</div>
       </ScScrollbar>
+      <div className="mt-2">
+        <ScLoading spinning={loading} text="加载中"></ScLoading>
+      </div>
     </div>
   );
 };
