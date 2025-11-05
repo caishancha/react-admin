@@ -13,6 +13,7 @@ import {
   ScPopover,
   ScScrollbar,
   ScSelect,
+  ScLoading,
 } from '@react-admin-core/shadcn-ui';
 import { useState } from 'react';
 
@@ -89,7 +90,6 @@ export const Workbench = () => {
       <ScScrollbar className="w-[300px] h-[300px]" shadow shadowLeft>
         <div className="h-[400px] w-[300px] bg-[#f0f0f0]">我是滚动条</div>
       </ScScrollbar>
-      <div className="mt-2"></div>
       <div className="w-52">
         <ScSelect
           value={selectValue}
@@ -100,6 +100,9 @@ export const Workbench = () => {
             { label: '选项2', value: '2' },
           ]}
         />
+      </div>
+      <div className="mt-2">
+        <ScLoading spinning={false} text="加载中"></ScLoading>
       </div>
     </div>
   );
