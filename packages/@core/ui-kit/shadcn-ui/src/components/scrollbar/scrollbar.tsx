@@ -89,14 +89,12 @@ export const ScScrollbar = ({
 
   return (
     <ScrollArea
-      className={cn(
-        styles['sc-scrollbar'],
-        'relative',
-        className,
-        `${!isAtLeft && !isAtRight && showShadowLeft && showShadowRight ? 'both-shadow' : ''}`,
-        `${!isAtLeft && showShadowLeft ? 'left-shadow' : ''}`,
-        `${!isAtRight && showShadowRight ? 'right-shadow' : ''}`,
-      )}
+      className={cn('relative', className, styles['sc-scrollbar'], {
+        'both-shadow':
+          !isAtLeft && !isAtRight && showShadowLeft && showShadowRight,
+        'left-shadow': !isAtLeft && showShadowLeft,
+        'right-shadow': !isAtRight && showShadowRight,
+      })}
       onScroll={handleScroll}
     >
       {showShadowTop && (
@@ -104,8 +102,10 @@ export const ScScrollbar = ({
           className={cn(
             styles['scrollbar-top-shadow'],
             'pointer-events-none absolute top-0 z-10 h-12 w-full opacity-0 transition-opacity duration-300 ease-in-out will-change-[opacity]',
-            `${!isAtTop ? 'opacity-100' : ''}`,
-            `${shadowBorder && !isAtTop ? 'border-border border-t' : ''}`,
+            {
+              'opacity-100': !isAtTop,
+              'border-border border-t': shadowBorder && !isAtTop,
+            },
           )}
         ></div>
       )}
@@ -115,8 +115,10 @@ export const ScScrollbar = ({
           className={cn(
             styles['scrollbar-bottom-shadow'],
             'pointer-events-none absolute bottom-0 z-10 h-12 w-full opacity-0 transition-opacity duration-300 ease-in-out will-change-[opacity]',
-            `${!isAtTop && !isAtBottom ? 'opacity-100' : ''}`,
-            `${shadowBorder && !isAtTop && !isAtBottom ? 'border-border border-b' : ''}`,
+            {
+              'opacity-100': !isAtTop && !isAtBottom,
+              'border-border border-b': shadowBorder && !isAtTop && !isAtBottom,
+            },
           )}
         ></div>
       )}

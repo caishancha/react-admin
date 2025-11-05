@@ -13,3 +13,4 @@ export * from './popover';
 export * from './scrollbar';
 export * from './select';
 export * from './spine-text';
+export * from './spinner';
