@@ -11,3 +11,5 @@ export * from './input-password';
 export * from './logo';
 export * from './popover';
 export * from './scrollbar';
+export * from './select';
+export * from './spine-text';

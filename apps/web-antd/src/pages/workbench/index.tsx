@@ -12,6 +12,7 @@ import {
   ScLogo,
   ScPopover,
   ScScrollbar,
+  ScSelect,
 } from '@react-admin-core/shadcn-ui';
 import { useState } from 'react';
 
@@ -47,6 +48,8 @@ export const Workbench = () => {
   ];
 
   const [password, setPassword] = useState('');
+
+  const [selectValue, setSelectValue] = useState<string>();
 
   return (
     <div className="w-full">
@@ -86,6 +89,18 @@ export const Workbench = () => {
       <ScScrollbar className="w-[300px] h-[300px]" shadow shadowLeft>
         <div className="h-[400px] w-[300px] bg-[#f0f0f0]">我是滚动条</div>
       </ScScrollbar>
+      <div className="mt-2"></div>
+      <div className="w-52">
+        <ScSelect
+          value={selectValue}
+          onChange={e => setSelectValue(e)}
+          placeholder="请选择"
+          options={[
+            { label: '选项1', value: '1' },
+            { label: '选项2', value: '2' },
+          ]}
+        />
+      </div>
     </div>
   );
 };
