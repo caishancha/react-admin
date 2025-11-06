@@ -10,5 +10,6 @@
 @plugin 'tailwindcss-animate';
 
 /* 显式注册源 */
-@source '../../../../packages/@core/ui-kit//shadcn-ui';
+@source '../../../../packages/@core/ui-kit/shadcn-ui';
+@source '../../../../packages/@core/ui-kit/layout-ui';
 @source inline("dark");
