@@ -14,3 +14,4 @@ export * from './scrollbar';
 export * from './select';
 export * from './spine-text';
 export * from './spinner';
+export * from './tooltip';

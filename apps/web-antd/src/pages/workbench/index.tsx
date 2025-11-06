@@ -14,6 +14,10 @@ import {
   ScScrollbar,
   ScSelect,
   ScLoading,
+  ScSpineText,
+  ScSpinner,
+  ScHelpTooltip,
+  ScTooltip,
 } from '@react-admin-core/shadcn-ui';
 import { useState } from 'react';
 
@@ -103,6 +107,20 @@ export const Workbench = () => {
       </div>
       <div className="mt-2">
         <ScLoading spinning={false} text="加载中"></ScLoading>
+      </div>
+      <div className="mt-2">
+        <ScSpinner spinning={false}></ScSpinner>
+      </div>
+      <div className="mt-2">
+        <ScSpineText>加载中</ScSpineText>
+      </div>
+      <div className="mt-2">
+        <ScHelpTooltip>这是一个帮助提示</ScHelpTooltip>
+      </div>
+      <div className="mt-2">
+        <ScTooltip triggerContent={<ScButton>我是按钮</ScButton>} side="top">
+          这是一个提示
+        </ScTooltip>
       </div>
     </div>
   );

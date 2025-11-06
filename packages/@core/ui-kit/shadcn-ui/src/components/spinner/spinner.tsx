@@ -46,7 +46,7 @@ export const ScSpinner = ({ minLoadingTime = 50, ...props }: Props) => {
       className={cn(
         'flex-center z-100 bg-overlay-content absolute left-0 top-0 size-full backdrop-blur-sm transition-all duration-500',
         {
-          'invisible opacity-0': !showSpinner,
+          'invisible opacity-0': !showSpinner.current,
         },
         props.className,
       )}

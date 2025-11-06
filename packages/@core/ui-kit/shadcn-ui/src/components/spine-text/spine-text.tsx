@@ -18,7 +18,7 @@ export const ScSpineText = ({
   return (
     <div
       style={{
-        animation: `shine ${animationDuration}s linear ${animationIterationCount}`,
+        animation: `${styles.shine} ${animationDuration}s linear ${animationIterationCount}`,
       }}
       className={cn('!bg-clip-text text-transparent', styles['sc-spine-text'])}
     >
