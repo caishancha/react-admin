@@ -5,3 +5,4 @@ export * from './use-namespace';
 export * from './use-scroll-lock';
 export * from './use-simple-locale';
 export * from './use-sortable';
+export * from './use-define-model';
